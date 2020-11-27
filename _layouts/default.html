@@ -35,6 +35,9 @@
     </footer>
 </main>
 
+    <script>
+        Array.from(document.querySelectorAll('#the-script ~ .language-html .s')).map(e => e.innerText = e.innerText.replace('integrationId=REPLACE_ME', location.hash));
+    </script>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </body>
