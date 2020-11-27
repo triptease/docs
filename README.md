@@ -15,7 +15,7 @@ It does not matter if the page is a brand.com page, or hotel vanity page, or hot
 The script for your integrationId
 
 ```html
-<script>(function(a,t,b,c,d){c=a.createElement(t);c.src=b,c.defer=true,c.async=true,c.crossOrigin='anonymous';c.type="text/javascript";d=a.getElementsByTagName(t)[0];d.parentNode.insertBefore(c,d)})(document,"script","https://onboard.triptease.io/bootstrap.js?integrationId=XXX");</script>
+<script defer async crossorigin="anonymous" type="text/javascript" src="https://onboard.triptease.io/bootstrap.js?integrationId=XXX"></script>
 ```
 
 Our recommended way of getting this script onto your page is via a tag manager (e.g. GTM).
