@@ -15,8 +15,8 @@ It does not matter if the page is a brand.com page, or hotel vanity page, or hot
 The script for your integrationId
 
 ```html
-<script src="https://onboard.triptease.io/bootstrap.js?integrationId=REPLACE_ME"
-        defer async crossorigin="anonymous" type="text/javascript">
+<script defer async crossorigin="anonymous" type="text/javascript"
+src="https://onboard.triptease.io/bootstrap.js?integrationId=REPLACE_ME">
 </script>
 ```
 
