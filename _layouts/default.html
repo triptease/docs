@@ -36,7 +36,7 @@
 </main>
 
     <script>
-       if(location.search) Array.from(document.querySelectorAll('#the-script ~ .language-html .s')).map(e => e.src = e.src + location.search);
+       if(location.search) Array.from(document.querySelectorAll('#your-script-tag ~ .language-html .s')).map(e => e.innerText = e.innerText.replace('bootstrap.js', 'bootstrap.js' + location.search));
     </script>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
