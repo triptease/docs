@@ -68,7 +68,7 @@ We never read any sensitive information such as:
     - Card number
     - Expiry etc
 
-For more information head over to our help section on [How Triptease Collects and Uses Data](https://help.triptease.com/en/collections/102136-getting-started#how-triptease-collects-and-uses-data).
+For more information head over to our help section on [How Triptease collects and uses data](https://help.triptease.com/en/collections/102136-getting-started#how-triptease-collects-and-uses-data).
 
 #### What is the performance impact on my page?
 
