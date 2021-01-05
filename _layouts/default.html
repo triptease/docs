@@ -36,7 +36,7 @@
 </main>
 
     <script>
-       if(location.search) Array.from(document.querySelectorAll('#the-script ~ .language-html .s')).map(e => e.innerText = e.innerText.replace('?integrationId=REPLACE_ME', location.search));
+       if(location.search) Array.from(document.querySelectorAll('#the-script ~ .language-html .s')).map(e => e.innerText = e.innerText + location.search);
     </script>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
