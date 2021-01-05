@@ -59,12 +59,12 @@ We read the following information (if available)
 
 We never read any sensitive information such as:
 - Guest details 
-    - First name, last name,
-    - Address, 
-    - Email, 
+    - First / last name,
+    - Address
+    - Email
     - Telephone etc
 - Payment details 
-    - Card number, 
+    - Card number
     - Expiry etc
 
 For more information head over to our help section on [How Triptease Collects and Uses Data](https://help.triptease.com/en/collections/102136-getting-started#how-triptease-collects-and-uses-data).
