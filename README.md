@@ -16,7 +16,7 @@ The script for your integrationId
 
 ```html
 <script defer async crossorigin="anonymous" type="text/javascript"
-src="https://onboard.triptease.io/bootstrap.js?integrationId=REPLACE_ME">
+src="https://onboard.triptease.io/bootstrap.js">
 </script>
 ```
 
