@@ -10,9 +10,7 @@ To integrate with Triptease we need a single script to be placed across the full
 It does not matter if the page is a brand.com page, or hotel vanity page, or hotel booking engine page - the same script works everywhere.
 
 
-##### The script
-
-The script for your integrationId
+##### Your script tag
 
 ```html
 <script defer async crossorigin="anonymous" type="text/javascript"
