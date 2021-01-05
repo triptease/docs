@@ -23,10 +23,11 @@ Our recommended way of getting this script onto your page is via a tag manager (
 #### What does the script do? 
 
 The script performs the following tasks:
-- Detects the current page and loads the correct script (i.e. on Synxis booking engine it loads the script capable of reading Synxis pages)  
-- Identifies your brand and the hotel 
-- Loads the correct products for your page
-- Reads page specific data i.e. search & rate availability or booking information
+- Detects the current location in the funnel (group page, hotel page, search page or confirmation page)
+- Load the correct script for that location (i.e. on the booking engine it loads the script capable of reading search and confirmation pages)  
+- Identifies your group/brand and the specific hotel 
+- Loads the correct products for that page
+- Reads page specific data (see below) and send it to the loaded products
 
 #### What specific data do we read?
 
