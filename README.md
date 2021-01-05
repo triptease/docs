@@ -31,14 +31,29 @@ The script performs the following tasks:
 #### What specific data do we read?
 
 We read the following information
-- Search & rate availability pages
-    - Checkin, checkout, number of adults, number of children  
-    - Room name, rate name, price
+- Search query
+    - Checkin, 
+    - Checkout, 
+    - Number of adults, 
+    - Number of children
+- Search results
+    - Room and rate names
+    - Price
 - Booking confirmation pages
     - Booking reference
-    - Total price, room only price
-- Guest’s location, browser and device information
-- Hotel address
+    - Total price, 
+    - Room only price
+    - Room and rate names
+- Guest’s information
+    - IP address (always masked), 
+    - Approximate Geo location (country/region), 
+    - Browser and device information (from User Agent)
+- Hotel information
+    - Street
+    - Postal Code
+    - City
+    - Country
+    - Geo location
 
 #### What data do we never read?
 
