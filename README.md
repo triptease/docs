@@ -30,7 +30,7 @@ The script performs the following tasks:
 
 #### What specific data do we read?
 
-We read the following information
+We read the following information (if available)
 - Search query
     - Checkin, 
     - Checkout, 
