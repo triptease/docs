@@ -71,8 +71,17 @@ For more information head over to our help section on [How Triptease Collects an
 
 #### What is the performance impact on my page?
 
-We have specifically engineered our scripts to only load after all of your content has finished rendering and to never block the main thread.
-You can use Google Lighthouse or [Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/) to measure our impact.   
+We have specifically engineered our scripts with following principles mind:
+ - Always load after all of your content has finished rendering 
+ - Ensure everything is asynchronous and never blocks the main thread. 
+ - Only run the specific products required for your integration
+ - Cache as much as possible
+ - Always use HTTP2/3
+ - Use GZIP and Brotli compression
+ - Automatically detect changes without expensive polling
+ 
+You can use Google Lighthouse or [Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/) to measure our impact. 
+You should see a minimal change in score with or without our script.
 
 #### What happens if my booking engine is not supported?
 
