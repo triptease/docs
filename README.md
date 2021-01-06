@@ -14,7 +14,7 @@ It does not matter if the page is a brand.com page, or hotel vanity page, or hot
 
 ```html
 <script defer async crossorigin="anonymous" type="text/javascript"
-src="https://onboard.triptease.io/bootstrap.js">
+src="https://onboard.triptease.io/bootstrap.js?integrationId=REPLACE_ME">
 </script>
 ```
 
