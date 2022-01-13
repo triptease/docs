@@ -1,7 +1,5 @@
 ## Cross Domain Analytics
 
-This is a brain dump for the docs explaining why a client should turn it on
-
 ### What is cross domain analytics?
 
 As web security has increased over time, the amount of information shared between different domains has decreased. This
