@@ -17,7 +17,7 @@ means those 2 domains also have an effective security barrier between them reduc
 
 ![two-separate-domains.png](assets/images/two-separate-domains.png)
 
-**NB: This applies even if you are using subdomains like: [www.hotel.com](http://www.hotel.com) and book.hotel.com.**
+**NB: This applies even if you are using subdomains like: `www.hotel.com` and `book.hotel.com`.**
 
 The division is an arbitrary because the hotel controls content on both domains, and ideally it would just be a
 single domain.
