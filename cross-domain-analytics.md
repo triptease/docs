@@ -21,8 +21,8 @@ arbitrary division because the hotel controls content on both domains, and ideal
 **NB: This also applies even if you are using subdomains like: [www.hotel.com](http://www.hotel.com) and
 book.hotel.com.**
 
-However, it is possible to re-enable communication between the two domains and in effect create a single security barrier
-around the outside of the two domains.
+However, it is possible to re-enable communication between the two domains and in effect create a single security
+barrier around the outside of the two domains.
 
 #### Two Unified Domains:
 
@@ -36,7 +36,7 @@ your ecommerce strategy look less effective than it actually is.
 
 Other analytics tools each have their own name for this:
 
-- Google Analytics call 
+- Google Analytics call
   this [cross domain measurement](https://developers.google.com/analytics/devguides/collection/analyticsjs/cross-domain)
   and address it with their [linker](https://developers.google.com/analytics/devguides/collection/analyticsjs/linker)
 - Optimizely call
@@ -55,8 +55,9 @@ your booking engine:
   to [no-referrer-when-downgrade](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy#:~:text=any%20referrer%20information.-,no%2Dreferrer%2Dwhen%2Ddowngrade,-Send%20the%20origin)
   . This will improve Triptease analytics as well as other tools like Google Analytics (especially traffic acquisition
   and funnel / path exploration)
-- Ensure `target=”_blank”` and `rel=”opener”` are always set. This allows Triptease to identify the same user across both
-  windows without using cookies or local storage.
+- Ensure `target=”_blank”` and `rel=”opener”` are always set. This allows Triptease to identify the same user across
+  both windows without using cookies or local storage. This will mean also mean that links to your BE will always open
+  in a new window.
 
 ### Why don’t you use link decoration like Google Analytics?
 
