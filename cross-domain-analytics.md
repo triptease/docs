@@ -55,7 +55,7 @@ To reduce developer burden, we will automatically configure the following on all
   to [no-referrer-when-downgrade](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy#:~:text=any%20referrer%20information.-,no%2Dreferrer%2Dwhen%2Ddowngrade,-Send%20the%20origin)
   . This will improve Triptease analytics as well as other tools like Google Analytics (especially traffic acquisition
   and funnel / path exploration)
-- Ensure `target=”_blank”` and `rel=”opener”` are always set. This allows Triptease to identify the same visitor across
+- Ensure `target=”_blank”` and `rel=”opener”` are set. This allows Triptease to identify the same visitor across
   both windows without using cookies or local storage. This will mean that links to your BE will always open
   in a new window.
 
