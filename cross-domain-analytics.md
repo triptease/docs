@@ -56,8 +56,7 @@ your booking engine:
   . This will improve Triptease analytics as well as other tools like Google Analytics (especially traffic acquisition
   and funnel / path exploration)
 - Ensure `target=”_blank”` and `rel=”opener”` are always set. This allows Triptease to identify the same user across both
-  windows
-- without using cookies or local storage.
+  windows without using cookies or local storage.
 
 ### Why don’t you use link decoration like Google Analytics?
 
