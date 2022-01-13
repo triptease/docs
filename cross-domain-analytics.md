@@ -10,16 +10,17 @@ domains.
 
 ![single-domain.png](assets/images/single-domain.png)
 
-In the hotel industry it is fairly common to have a separate marketing website and booking engine, by default this means
-that those 2 domains also have an effective security barrier between them that reduces communication. (This is an
-arbitrary division because the hotel controls content on both domains, and ideally it would just be a single domain)
+In the hotel industry it is fairly common to have a separate marketing website and booking engine. By default, this
+means those 2 domains also have an effective security barrier between them reducing communication.
 
 #### Two Separate Domains:
 
 ![two-separate-domains.png](assets/images/two-separate-domains.png)
 
-**NB: This applies even if you are using subdomains like: [www.hotel.com](http://www.hotel.com) and
-book.hotel.com.**
+**NB: This applies even if you are using subdomains like: [www.hotel.com](http://www.hotel.com) and book.hotel.com.**
+
+The division is an arbitrary because the hotel controls content on both domains, and ideally it would just be a
+single domain.
 
 However, it is possible to re-enable communication between the two domains and in effect create a single security
 barrier around the outside of the two domains.
