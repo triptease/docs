@@ -62,7 +62,7 @@ your booking engine:
 
 In our analysis and testing we have seen many urls that contain a visitor ID being shared freely thereby identifying
 multiple different visitors as a single visitor. Also, as single page application become more common we have found that
-websites often strip the query parameters before they can be read by our scripts.
+websites often strip the query parameters before they can be read by your analytics scripts.
 
 ### How do you turn this on?
 
