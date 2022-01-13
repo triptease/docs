@@ -47,8 +47,7 @@ while still being compliant with privacy laws.
 
 ### When I turn this on, what does it do?
 
-To reduce developer burden, our existing Triptease scripts will automatically configure the following on all links to
-your booking engine:
+To reduce developer burden, we will automatically configure the following on all links to your booking engine:
 
 - Allow full referrer across the two domains by setting
   the [referrer policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) back
