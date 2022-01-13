@@ -58,12 +58,16 @@ To reduce developer burden, Triptease will automatically configure the following
 - Ensure `target=”_blank”` and `rel=”opener”` are set. This allows Triptease to identify the same visitor across both
   windows without using cookies or local storage. This will mean that links to your BE will always open in a new window.
 
+**NB: This should only ever apply to your Booking Engine links and not say another third party like Facebook. Please get
+in touch if this is not the case, and we can adjust your setup.** 
+
 ### Why doesn't Triptease use link decoration like Google Analytics?
 
-We frequently see many URLs that contain a visitor ID being freely shared, thereby identifying different users as one.
-Also, as single page application becomes more common, we have observed that websites often strip the query parameters
-before they can be read by your analytics scripts.
+We frequently see many URLs that contain a visitor ID being freely shared, thereby incorrectly identifying different
+users as one. Also, as single page application becomes more common, we have observed that websites often strip the query
+parameters before they can be read by your analytics scripts. This leads to more inaccurate analytics and reports. 
 
 ### How can I turn on cross domain analytics for my hotel?
 
-Please get in touch with our Customer Success team at [customersuccess@triptease.com](mailto:customersuccess@triptease.com)
+Please get in touch with our Customer Success team
+at [customersuccess@triptease.com](mailto:customersuccess@triptease.com)
