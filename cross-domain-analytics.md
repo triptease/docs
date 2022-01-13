@@ -18,7 +18,7 @@ arbitrary division because the hotel controls content on both domains, and ideal
 
 ![two-separate-domains.png](assets/images/two-separate-domains.png)
 
-**NB: This also applies even if you are using subdomains like: [www.hotel.com](http://www.hotel.com) and
+**NB: This applies even if you are using subdomains like: [www.hotel.com](http://www.hotel.com) and
 book.hotel.com.**
 
 However, it is possible to re-enable communication between the two domains and in effect create a single security
