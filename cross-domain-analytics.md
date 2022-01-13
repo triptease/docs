@@ -46,7 +46,7 @@ Other analytics tools each have their own name for this:
 By enabling cross domain analytics, you will be future proofing your analytics in a world without 3rd party cookies
 while still being compliant with privacy laws.
 
-### When I turn this on, what does it do?
+### When this is turned this on, what does it do?
 
 To reduce developer burden, we will automatically configure the following on all links to your booking engine:
 
@@ -56,7 +56,7 @@ To reduce developer burden, we will automatically configure the following on all
   . This will improve Triptease analytics as well as other tools like Google Analytics (especially traffic acquisition
   and funnel / path exploration)
 - Ensure `target=”_blank”` and `rel=”opener”` are always set. This allows Triptease to identify the same visitor across
-  both windows without using cookies or local storage. This will mean also mean that links to your BE will always open
+  both windows without using cookies or local storage. This will mean that links to your BE will always open
   in a new window.
 
 ### Why don’t you use link decoration like Google Analytics?
