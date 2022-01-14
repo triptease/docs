@@ -55,17 +55,19 @@ To reduce developer burden, Triptease will automatically configure the following
   to [no-referrer-when-downgrade](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy#:~:text=any%20referrer%20information.-,no%2Dreferrer%2Dwhen%2Ddowngrade,-Send%20the%20origin)
   . This will improve Triptease analytics as well as other tools like Google Analytics (especially traffic acquisition
   and funnel / path exploration).
-- Ensure `target=”_blank”` and `rel=”opener”` are set. This allows Triptease to identify the same visitor across both
-  windows without using cookies or local storage. This will mean that links to your BE will always open in a new window.
+- Ensure [target=”_blank”](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target)
+  and [rel=”opener”](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#attr-opener) are set. This allows
+  Triptease to identify the same visitor across both windows without using cookies or local storage. This will mean that
+  links to your BE will always open in a new window.
 
 **NB: This should only ever apply to your Booking Engine links and not say another third party like Facebook. Please get
-in touch if this is not the case, and we can adjust your setup.** 
+in touch if this is not the case, and we can adjust your setup.**
 
 ### Why doesn't Triptease use link decoration like Google Analytics?
 
 We frequently see many URLs that contain a visitor ID being freely shared, thereby incorrectly identifying different
 users as one. Also, as single page application becomes more common, we have observed that websites often strip the query
-parameters before they can be read by your analytics scripts. This leads to more inaccurate analytics and reports. 
+parameters before they can be read by your analytics scripts. This leads to more inaccurate analytics and reports.
 
 ### How can I turn on cross domain analytics for my hotel?
 
