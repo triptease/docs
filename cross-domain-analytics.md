@@ -67,7 +67,7 @@ in touch if this is not the case, and we can adjust your setup.**
 
 We frequently see many URLs that contain a visitor ID being freely shared, thereby incorrectly identifying different
 users as one. Also, as single page application becomes more common, we have observed that websites often strip the query
-parameters before they can be read by your analytics scripts. This leads to more inaccurate analytics and reports.
+parameters before they can be read by your analytics scripts again leading to inaccurate analytics and reports.
 
 ### How can I turn on cross domain analytics for my hotel?
 
