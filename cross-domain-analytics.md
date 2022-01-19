@@ -17,10 +17,11 @@ means those two domains also have an effective security barrier between them red
 
 ![two-separate-domains.png](assets/images/two-separate-domains.png)
 
-**NB: This applies even if you are using subdomains like: `www.hotel.com` and `book.hotel.com`.**
+**NB: This applies even if you are using subdomains like: `www.hotel.com` and `reservation.hotel.com` as they are NOT
+the [same-origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy).**
 
-The division is arbitrary because the hotel controls content on both domains, ideally it would just be a single
-domain and if this was the case, referrer information and communication between pages would just work. 
+The division is arbitrary because the hotel controls content on both domains, ideally it would just be a single domain
+and if this was the case, referrer information and communication between pages would just work.
 
 However, it is possible to re-enable communication between the two domains, and in effect create a single security
 barrier around the outside of the two domains.
