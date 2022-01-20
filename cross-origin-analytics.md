@@ -87,8 +87,8 @@ as most if not all cookies will now be sent to all subdomains possibly leaking P
 
 As [Google points out](https://bughunters.google.com/learn/invalid-reports/web-platform/navigation/5825028803002368)
 if you can open a new window or redirect a URL you can launch a phishing attack and the best defense is the browser and
-user education. In comparison to allowing a 3rd party read any 1st cookies you might have set, the attack surface is
-minimal
+user education. In comparison to allowing a 3rd party access to any 1st cookies, the attack surface is
+minimal.
 
 ### What is the difference between an origin, a domain and a subdomain?
 
