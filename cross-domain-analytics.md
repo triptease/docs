@@ -1,4 +1,4 @@
 ---
 layout: redirect
-target: https://docs.triptease.io/cross-origin-analytics
+target: /cross-origin-analytics
 ---
