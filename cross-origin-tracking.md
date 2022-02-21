@@ -36,6 +36,9 @@ Without enabling cross-origin tracking, you will end up having two separate funn
 counting some of your visitors. This will result in an inflated visitor count and apparent decreased conversion rate,
 meaning your reporting will be inaccurate and appear to be less effective.
 
+Traffic acquisition reports that try to identify the source of traffic will also report elevated referral traffic at the
+expense of other channels.
+
 Other analytics tools each support this in different ways:
 
 - Google Analytics call
@@ -51,18 +54,34 @@ while still being compliant with privacy laws.
 
 To reduce developer burden, Triptease will automatically configure the following on all links to your Booking Engine:
 
-- Allow full referrer across the two origins by setting
-  the [referrer policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) back
+- Ensure [target=”_blank”](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target) is set so that links
+  to your BE open in a new window.
+- Ensure [rel=”opener”](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#attr-opener) is set so that
+  Triptease scripts can communicate across the two separate origins.
+- Restore [referrer policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy) back
   to [no-referrer-when-downgrade](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy#:~:text=any%20referrer%20information.-,no%2Dreferrer%2Dwhen%2Ddowngrade,-Send%20the%20origin)
-  . This will improve Triptease analytics as well as other tools like Google Analytics (especially traffic acquisition
-  and funnel / path exploration).
-- Ensure [target=”_blank”](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target)
-  and [rel=”opener”](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#attr-opener) are set. This allows
-  Triptease to identify the same visitor across both windows without using cookies or local storage. This will mean that
-  links to your BE will always open in a new window.
+  so that referrer path and query parameters are not stripped when crossing between the two origins. (This will also
+  improve Google Analytics especially traffic acquisition and funnel / path exploration).
 
 **NB: This should only ever apply to your Booking Engine links and not say another third party like Facebook. Please get
 in touch if this is not the case, and we can adjust your setup.**
+
+### Why doesn't Triptease always just turn this on?
+
+Normally Triptease does not modify any HTML on your page (excluding adding our scripts and associated widgets) so we
+want to make it an explicit decision to change how Booking Engine links work. However, due to the improvements in
+tracking and analytics we do recommend this change.
+
+### What could go wrong?
+
+The worst that could happen would be that a link that is not going to your Booking Engine now opens in a new window and
+referral data has reverted to pre November 2020 browser behaviour. If you see this happening please report it, and we
+will adjust your setup.
+
+### Does this affect GDPR or other privacy requirements?
+
+No, there is no additional data or data processors or processing involved. The only change is that inaccurate data is
+reduced, all your previous documentation and privacy statements are still correct.
 
 ### Why doesn't Triptease use link decoration like Google Analytics?
 
