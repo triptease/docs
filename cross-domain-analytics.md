@@ -1,4 +1,4 @@
 ---
 layout: redirect
-target: /cross-origin-analytics
+target: /cross-origin-tracking
 ---
