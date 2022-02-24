@@ -92,6 +92,9 @@ then the problem is compounded for every user that clicks the link.
 Another issue with this approach is as single page application becomes more common, we see more and more websites that
 strip the query parameters before they can be read by your tracking scripts again leading to inaccurate analytics.
 
+Finally, using link decoration in Safari will actually reduce any cookies created via `document.cookie` duration from 7 
+days to 24 hours since [ITP 2.2](https://webkit.org/blog/8828/intelligent-tracking-prevention-2-2/)  
+
 ### Doesn't using subdomains solve the same problem?
 
 Unfortunately not, subdomains are still treated as separate origins from a web security standpoint. This means that
