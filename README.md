@@ -87,4 +87,4 @@ You should see a minimal change in score with or without our script.
 #### What happens if my booking engine is not supported?
 
 If your booking engine is not supported, please reach out to us, and we may be able to integrate with your booking engine.
-Alternatively, you can provide us the data we need using industry standard [Structured Data](https://structured-data.triptease.io/).
+Alternatively, you can provide us the data we need using industry standard [Structured Data](https://docs.triptease.io/structured-data).
