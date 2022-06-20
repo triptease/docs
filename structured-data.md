@@ -1,22 +1,22 @@
-## Structured Data
+## Welcome to structured-data.triptease.io
 
 ### Overview
 
-[Schema.org](http://schema.org/) contains a rich vocabulary that can be used to help tools read and understand web pages in wide number of domains. 
-This page details the markup that can be added to a hotel website for the benefit of not only Triptease products but also your SEO and Google listings.  
+[Schema.org](http://schema.org/) contains a rich vocabulary that can be used to help tools read and understand web pages in wide number of domains.
+This page details the markup that can be added to a hotel website for the benefit of not only Triptease products but also your SEO and Google listings.
 
-If you notice anything wrong please raise an [issue](https://github.com/triptease/structured-data/issues). 
+If you notice anything wrong please raise an [issue](https://github.com/triptease/structured-data/issues).
 
 ### Microdata vs RDFa vs JSON-LD
 
-If the markup is static (like your hotel name and address) then JSON-LD is generally the easiest to test and debug, while if the meta data is more dynamic (like offers or rate details) 
+If the markup is static (like your hotel name and address) then JSON-LD is generally the easiest to test and debug, while if the meta data is more dynamic (like offers or rate details)
 you may want to use the microdata format embedded in the HTML so that you keep the UI in sync with the meta data.
 
 Triptease supports all three formats so if you are already using one then don’t worry about switching.
 
 ### Getting started
 
-There are different levels of support for meta-data, it's best to start with the simplest and work your way up to more advanced features as you get more comfortable. 
+There are different levels of support for meta-data, it's best to start with the simplest and work your way up to more advanced features as you get more comfortable.
 
 * [Identification](#identification)
 * [Reservation](#reservation)
@@ -32,8 +32,8 @@ Advanced
 
 *If you are already using another form of identification (apiKeys, propertyCodes etc) then you can safely skip this step*
 
-This is the simplest and most important meta data you can add through out your marketing website and booking engine. Ideally you want this on every page. 
-Doing this will automatically allow your hotel to appear on Google search pages and Google Maps. Just putting the hotel name and @type on each page will help Triptease identify your hotel automatically 
+This is the simplest and most important meta data you can add through out your marketing website and booking engine. Ideally you want this on every page.
+Doing this will automatically allow your hotel to appear on Google search pages and Google Maps. Just putting the hotel name and @type on each page will help Triptease identify your hotel automatically
 
 #### JSON-LD Example
 
@@ -93,44 +93,44 @@ Make sure you set this to [Hotel](https://schema.org/Hotel), [LodgingBusiness](h
 
 *Used by: Google, Triptease*
 
-#### name 
+#### name
 
 The [name](https://schema.org/name) should be unique within your group or brand.
 
 *Used by: Google, Triptease*
 
-#### identifier (Optional) 
+#### identifier (Optional)
 
 The [identifier](https://schema.org/identifier) can be used set to a unique property ID.
 
 *Used by: Triptease*
 
 #### brand (Optional)
-  
+
 The [brand](https://schema.org/brand) can help Triptease group your hotels together.
 
 *Used by: Triptease*
 
 #### address (Optional)
-  
+
 The [address](https://schema.org/address) allows Triptease and Google to correctly associate your Hotel with it's location. At a minimum add the [postalCode](https://schema.org/postalCode).
 
 *Used by: Google, Triptease*
 
 #### telephone (Optional)
-  
+
 The [telephone](https://schema.org/telephone) will allow Google to correctly list your contact details
 
 *Used by: Google*
 
 #### url (Optional)
-  
+
 The [url](https://schema.org/url) will allow Triptease and Google to link to your hotel home page.
 
 *Used by: Google, Triptease*
 
 #### image (Optional)
-  
+
 The [image](https://schema.org/image) will allow Google (Search and Maps) to display a thumbnail image next to your name
 
 *Used by: Google*
@@ -186,17 +186,17 @@ Lets walk through this:
 
 #### @type
 
-Set this to [LodgingReservation](https://schema.org/LodgingReservation) 
+Set this to [LodgingReservation](https://schema.org/LodgingReservation)
 
 
 #### reservationId
 
-The [reservationId](https://schema.org/reservationId) should be unique and verifiable.  
+The [reservationId](https://schema.org/reservationId) should be unique and verifiable.
 
 
 #### reservationStatus
 
-The [reservationStatus](https://schema.org/reservationStatus) should be set to [ReservationConfirmed](https://schema.org/ReservationConfirmed). 
+The [reservationStatus](https://schema.org/reservationStatus) should be set to [ReservationConfirmed](https://schema.org/ReservationConfirmed).
 If you wish to expose reservations earlier in the funnel then make sure you use one of the other [ReservationStatusType](https://schema.org/ReservationStatusType).
 
 
@@ -225,7 +225,7 @@ The basePrice is the base price for the duration of the stay *excluding* taxes e
 
 #### priceCurrency
 
-The [priceCurrency](https://schema.org/priceCurrency) is the three digit ISO currency code. 
+The [priceCurrency](https://schema.org/priceCurrency) is the three digit ISO currency code.
 
 
 
@@ -268,20 +268,20 @@ Lets walk through this:
 
 #### @context
 
-Set this to https://structured-data.triptease.io 
+Set this to https://structured-data.triptease.io
 
 #### @type
 
-Set this to LodgingSearch* 
+Set this to LodgingSearch*
 
 #### checkinTime
 
-The [checkinTime](https://schema.org/checkinTime) is a combination of date and time. 
-We are using the same property as defined for a [LodgingReservation](https://schema.org/LodgingReservation) for consistency even though we are actually only interested in the date part. 
+The [checkinTime](https://schema.org/checkinTime) is a combination of date and time.
+We are using the same property as defined for a [LodgingReservation](https://schema.org/LodgingReservation) for consistency even though we are actually only interested in the date part.
 
 #### checkoutTime
 
-The [checkoutTime](https://schema.org/checkoutTime) is a combination of date and time. 
+The [checkoutTime](https://schema.org/checkoutTime) is a combination of date and time.
 We are using the same property as defined for a [LodgingReservation](https://schema.org/LodgingReservation) for consistency even though we are actually only interested in the date part.
 
 #### numAdults (Optional)
@@ -303,9 +303,9 @@ The numRooms* is the total number of rooms that were searched for. Defaults to 1
 
 *Used by: Triptease*
 
-These are the offer or rooms and rates the hotel has available for the specified search parameters. 
+These are the offer or rooms and rates the hotel has available for the specified search parameters.
 [schema.org](http://www.schema.org/) models this around [offers](http://schema.org/Offer) for [hotel rooms](http://schema.org/HotelRoom). This image explains the concept:
-                                                                                        
+
 ![Schema Diagram showing the relationship between entities](https://schema.org/docs/schema_hotels_1.png)
 
 Multiple offers can added to a page either inside a single script tag containing an array or multiple script/div tags etc.
@@ -356,7 +356,7 @@ Lets walk through this:
 
 #### @type
 
-Set this to [Offer](http://schema.org/Offer) 
+Set this to [Offer](http://schema.org/Offer)
 
 #### itemOffered
 
@@ -366,14 +366,14 @@ The [itemOffered](https://schema.org/itemOffered) should link to a [HotelRoom](h
 
 The [name](https://schema.org/name) should contain the rate name
 
-#### identifier (Optional) 
+#### identifier (Optional)
 
 The [identifier](https://schema.org/identifier) can be used to set a rate code
 
 #### priceSpecification
 
 The [priceSpecification](https://schema.org/UnitPriceSpecification) contains the [price](https://schema.org/price) and [currency](https://schema.org/currency):
- 
+
 price: The numeric value of the offer
 
 currency: The 3 character currency code of the offer
@@ -413,7 +413,7 @@ Lets walk through this:
 
 #### @type
 
-Set this to [OfferCatalog](http://schema.org/OfferCatalog) 
+Set this to [OfferCatalog](http://schema.org/OfferCatalog)
 
 #### numberOfItems
 
@@ -426,7 +426,7 @@ Just set this to zero so we know you have no availability. See https://schema.or
 
 *Used by: Triptease*
 
-This allows you to tell us about your booking engine or marketing site. This is used purely for diagnosis 
+This allows you to tell us about your booking engine or marketing site. This is used purely for diagnosis
 
 #### JSON-LD Example
 
@@ -453,7 +453,7 @@ Lets walk through this:
 
 #### @type
 
-Set this to [SoftwareApplication](http://schema.org/SoftwareApplication) 
+Set this to [SoftwareApplication](http://schema.org/SoftwareApplication)
 
 #### name
 
