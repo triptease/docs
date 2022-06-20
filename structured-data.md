@@ -1,4 +1,4 @@
-## Structured Data Docs
+## Structured Data Guide
 
 ### Overview
 
@@ -13,6 +13,10 @@ If the markup is static (like your hotel name and address) then JSON-LD is gener
 you may want to use the microdata format embedded in the HTML so that you keep the UI in sync with the meta data.
 
 Triptease supports all three formats so if you are already using one then don’t worry about switching.
+
+### Handling Data Updates
+
+If you are a SPA (Single Page App) or support multiple updates on the same page (i.e. searches), please update the HTML/JSON in place. Do NOT keep adding additional elements as this will just corrupt the data.
 
 ### Getting started
 
@@ -54,6 +58,11 @@ Doing this will automatically allow your hotel to appear on Google search pages 
   "postalCode": "W1 9B",
   "addressCountry": "United Kingdom"
   },
+  "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "15.234",
+      "longitude": "-80.3242"
+  },
  "telephone": "+44 1234 5678",
  "image": "http://example.com/image.png",
  "url": "http://example.com/"
@@ -75,6 +84,10 @@ Doing this will automatically allow your hotel to appear on Google search pages 
         <span itemprop="postalCode">W1 9B</span>
         <span itemprop="addressCountry">United Kingdom</span>
     </div>
+     <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+        latitude:<span itemprop="latitude">15.234</span>, 
+        longitude:<span itemprop="longitude">-80.3242</span>
+    </div>
  <div>Telephone: <span itemprop="telephone">+44 1234 5678</span></div>
  <div>
     <a href="http://example.com/" itemprop="url">
@@ -95,13 +108,13 @@ Make sure you set this to [Hotel](https://schema.org/Hotel), [LodgingBusiness](h
 
 #### name
 
-The [name](https://schema.org/name) should be unique within your group or brand.
+The [name](https://schema.org/name) should be a unique name within your group or brand.
 
 *Used by: Google, Triptease*
 
 #### identifier (Optional)
 
-The [identifier](https://schema.org/identifier) can be used set to a unique property ID.
+The [identifier](https://schema.org/identifier) should be a unique property code for your hotel.
 
 *Used by: Triptease*
 
@@ -113,7 +126,13 @@ The [brand](https://schema.org/brand) can help Triptease group your hotels toget
 
 #### address (Optional)
 
-The [address](https://schema.org/address) allows Triptease and Google to correctly associate your Hotel with it's location. At a minimum add the [postalCode](https://schema.org/postalCode).
+The [address](https://schema.org/address) allows Triptease and Google to correctly associate your Hotel with it's location. At a minimum add the [postalCode](https://schema.org/postalCode) and [addressCountry](https://schema.org/addressCountry).
+
+*Used by: Google, Triptease*
+
+#### geo (Optional)
+
+The [geo](https://schema.org/geo) allows Triptease and Google to accurately display your Hotel  on a map.
 
 *Used by: Google, Triptease*
 
@@ -197,23 +216,23 @@ The [reservationId](https://schema.org/reservationId) should be unique and verif
 #### reservationStatus
 
 The [reservationStatus](https://schema.org/reservationStatus) should be set to [ReservationConfirmed](https://schema.org/ReservationConfirmed).
-If you wish to expose reservations earlier in the funnel then make sure you use one of the other [ReservationStatusType](https://schema.org/ReservationStatusType).
+If you wish to expose reservations earlier in the funnel then make sure you use one of the other [ReservationStatusType](https://schema.org/ReservationStatusType). If you support cancellations please also add the correct structured data to that page and change the [reservationStatus](https://schema.org/reservationStatus) to [ReservationCancelled](https://schema.org/ReservationCancelled)
 
 
 #### checkinTime
 
 The [checkinTime](https://schema.org/checkinTime) is a combination of date and time. It cannot be just a time (despite what the name suggests).
 
-Ensure this is in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format (YYYY-MM-DD).
-So 9th April 2020 would become `2020-04-09`
+Ensure this is in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.
+This should either just be a date `2021-10-12` or a local datetime `2021-10-12T15:00:00` with optional timezone for the hotel `2021-10-12T15:00:00.000+07:00`. Do NOT convert to UTC time if at all possible.
 
 
 #### checkoutTime
 
 The [checkoutTime](https://schema.org/checkoutTime) is a combination of date and time. It cannot be just a time (despite what the name suggests).
 
-Ensure this is in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format (YYYY-MM-DD).
-So 9th April 2020 would become `2020-04-09`
+Ensure this is in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.
+This should either just be a date `2021-10-12` or a local datetime `2021-10-12T15:00:00` with optional timezone for the hotel `2021-10-12T15:00:00.000+07:00`. Do NOT convert to UTC time if at all possible.
 
 #### totalPrice
 
@@ -314,23 +333,42 @@ Multiple offers can added to a page either inside a single script tag containing
 
 ```html
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
-  "@type": "Offer",
-  "itemOffered": {
-    "@type": "HotelRoom",
-    "name": "Deluxe Double",
-    "identifier": "DD-001"
+[
+  {
+    "@context": "http://schema.org/",
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "HotelRoom",
+      "name": "Deluxe Double",
+      "identifier": "DD-001"
+    },
+    "name": "Best Available Rate",
+    "identifier": "BAR-001",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "99.00",
+      "priceCurrency": "USD",
+      "unitText": "Nightly"
+    }
   },
-  "name": "Best Available Rate",
-  "identifier": "BAR-001",
-  "priceSpecification": {
-    "@type": "UnitPriceSpecification",
-    "price": "99.00",
-    "priceCurrency": "USD",
-    "unitText": "Nightly"
+  {
+    "@context": "http://schema.org/",
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "HotelRoom",
+      "name": "Deluxe Double",
+      "identifier": "DD-001"
+    },
+    "name": "Member Rate",
+    "identifier": "MER-001",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "88.00",
+      "priceCurrency": "USD",
+      "unitText": "Nightly"
+    }
   }
-}
+]
 </script>
 ```
 
