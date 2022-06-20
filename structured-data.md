@@ -1,4 +1,4 @@
-## Welcome to structured-data.triptease.io
+## Structured Data Docs
 
 ### Overview
 
