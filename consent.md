@@ -20,14 +20,14 @@ It's as simple as setting the `data-storage-consent` attribute on the Triptease 
 ```html
 <script defer async crossorigin="anonymous" type="text/javascript"
         src="https://onboard.triptease.io/bootstrap.js?integrationId=REPLACE_ME"
-        data-storage-consent="none|essential,functionality,performance,advertising|all">
+        data-storage-consent="none|essential,functionality,performance,marketing|all">
 </script>
 ```
 
 The attribute can be set or updated and the Triptease script will automatically detect the change and make sure only the correct 
 storage mechanisms are allowed and that the correct Triptease products are loaded. 
 
-This attribute can have any of the following values: `none`, `essential`, `functionality`, `performance`, `advertising`, `all`
+This attribute can have any of the following values: `none`, `essential`, `functionality`, `performance`, `marketing`, `all`
 
 Multiple values can also be provided. eg `essential, functionality, performance` which would combine the applications allowed.
 
