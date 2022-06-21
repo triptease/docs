@@ -45,7 +45,7 @@ by 2 completely different user/devices. In effect the browser is automatically f
 
 
 
-### Essential (also known as strictly necessary)
+### Essential (strictly necessary)
 
 If the user only gives essential or strictly necessary storage consent, then Triptease will actually treat this 
 in exactly the same way as `none`. So no storage or applications will be allowed. 
@@ -58,7 +58,7 @@ it must not be considered strictly necessary or essential.
 |---------------------|---------------------|--------------|
 | Denied              | Denied              | None         |
 
-### Functionality (also known as personalisation/preferences )
+### Functionality (personalisation/preferences)
 
 When `functionality` storage consent is present it will enable all Convert related user functionality such as Messages, 
 Price Check and Chat. 
@@ -71,7 +71,7 @@ functionality to the user.
 |---------------------|---------------------|---------------------------------------------------|
 | Granted             | Granted             | Messages (including Price Check), Parity and Chat |
 
-### Performance (also known as statistics/analytics)
+### Performance (statistics/analytics)
 
 When `performance` storage consent is present it will enable products that are used to measure the performance
 of your website and booking funnel.
@@ -82,7 +82,7 @@ NB: User facing Convert products will *not* be enabled
 |---------------------|---------------------|-----------------------------|
 | Granted             | Granted             | Party, Meta and Paid Search |
 
-### Marketing/All (also known as advertising)
+### Marketing (advertising) or All 
 
 When `marketing` or `all` storage consent is present it will enable all Triptease products.
 
