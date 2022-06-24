@@ -10,7 +10,7 @@ If your site has a cookie/storage banner used for GDPR compliance, you can pass 
 
 It is as simple as setting the `data-storage-consent` attribute on the Triptease script tag. 
 
-### Example:
+#### Example:
 
 ```html
 <script defer async crossorigin="anonymous" type="text/javascript"
@@ -26,7 +26,7 @@ This attribute can have any of the following values: `none`, `essential`, `funct
 
 Multiple values can also be provided. e.g. `essential, functionality, performance` which would combine the applications allowed.
 
-### Example:
+#### Example:
 
 ```html
 <script defer async crossorigin="anonymous" type="text/javascript"
@@ -50,7 +50,7 @@ correct applications and allow storage access.
 |---------------------|---------------------|--------------|
 | Denied              | Denied              | None         |
 
-### Example:
+#### Example:
 
 ```html
 <script ...
@@ -59,19 +59,19 @@ correct applications and allow storage access.
 ```
 
 
-### Essential (strictly necessary)
+#### Essential (strictly necessary)
 
 If the user only gives `essential` or strictly necessary storage consent, then Triptease will actually treat this 
 in exactly the same way as `none`. So no storage or applications will be allowed. 
 
-We have taken this strict view to align with the [GDPR recommendation](https://gdpr.eu/cookies/) because a user would
-still be able to complete a booking with or without Triptease products. This is the litmus test we use.
+We have taken this strict view to align with the [GDPR recommendation](https://gdpr.eu/cookies/) because the litmus test is 
+"_Can a user complete a booking journey without Triptease products?_".
 
 | First Party Storage | Third Party Storage | Applications |
 |---------------------|---------------------|--------------|
 | Denied              | Denied              | None         |
 
-### Example:
+#### Example:
 
 ```html
 <script ...
@@ -91,7 +91,7 @@ from a user perspective.
 |---------------------|---------------------|---------------------------------------------------|
 | Granted             | Granted             | Messages (including Price Check), Parity and Chat |
 
-### Example:
+#### Example:
 
 ```html
 <script ...
@@ -111,7 +111,7 @@ NB: User facing Convert products will *not* be enabled
 |---------------------|---------------------|------------------------------|
 | Granted             | Granted             | Parity, Meta and Paid Search |
 
-### Example:
+#### Example:
 
 ```html
 <script ...
@@ -127,7 +127,7 @@ When `marketing` or `all` storage consent is present it will enable all Tripteas
 |---------------------|---------------------|----------------------|
 | Granted             | Granted             | All                  |
 
-### Example:
+#### Example:
 
 ```html
 <script ...
