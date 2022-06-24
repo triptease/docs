@@ -6,12 +6,7 @@ Consent mode allows you to control what type of functionality is enabled across 
 usage of first and third party storage mechanisms of the browser and which Triptease products run.
 If your site has a cookie/storage banner used for GDPR compliance, you can pass the user's consent to the Triptease script.
 
-### What do you mean by Cookie or Storage?
-
-In this document we will refer to storage to include cookies and any other web browser technology like localStorage or sessionStorage.
-Triptease does not use browser fingerprinting or any other means that can not be controlled by the end user. 
-
-## How do you change Consent Mode
+## How do you change Consent Mode?
 
 It is as simple as setting the `data-storage-consent` attribute on the Triptease script tag. 
 
@@ -55,6 +50,13 @@ correct applications and allow storage access.
 |---------------------|---------------------|--------------|
 | Denied              | Denied              | None         |
 
+### Example:
+
+```html
+<script ...
+        data-storage-consent="none">
+</script>
+```
 
 
 ### Essential (strictly necessary)
@@ -67,8 +69,15 @@ still be able to complete a booking with or without Triptease products. This is 
 
 | First Party Storage | Third Party Storage | Applications |
 |---------------------|---------------------|--------------|
-
 | Denied              | Denied              | None         |
+
+### Example:
+
+```html
+<script ...
+        data-storage-consent="essential">
+</script>
+```
 
 ### Functionality (personalisation/preferences)
 
@@ -82,6 +91,15 @@ from a user perspective.
 |---------------------|---------------------|---------------------------------------------------|
 | Granted             | Granted             | Messages (including Price Check), Parity and Chat |
 
+### Example:
+
+```html
+<script ...
+        data-storage-consent="functionality">
+</script>
+```
+
+
 ### Performance (statistics/analytics)
 
 When `performance` storage consent is present it will enable products that are used to measure the performance
@@ -93,6 +111,14 @@ NB: User facing Convert products will *not* be enabled
 |---------------------|---------------------|------------------------------|
 | Granted             | Granted             | Parity, Meta and Paid Search |
 
+### Example:
+
+```html
+<script ...
+        data-storage-consent="performance">
+</script>
+```
+
 ### Marketing (advertising) or All 
 
 When `marketing` or `all` storage consent is present it will enable all Triptease products.
@@ -101,3 +127,15 @@ When `marketing` or `all` storage consent is present it will enable all Tripteas
 |---------------------|---------------------|----------------------|
 | Granted             | Granted             | All                  |
 
+### Example:
+
+```html
+<script ...
+        data-storage-consent="marketing">
+</script>
+```
+
+### What do we mean by Cookie or Storage?
+
+In this document we will refer to storage to include cookies and any other web browser technology like localStorage or sessionStorage.
+Triptease does not use browser fingerprinting or any other means that can not be controlled by the end user.
