@@ -74,8 +74,8 @@ still be able to complete a booking with or without Triptease products. This is 
 
 When `functionality` storage consent is present it will enable all Convert products such as Messages, Price Check and Chat. 
 
-NB: Attract products will *not* be enabled as from a user perspective they are not providing any additional 
-functionality to the user.
+NB: Attract products will *not* be enabled as they are not providing any additional functionality 
+from a user perspective.
 
 
 | First Party Storage | Third Party Storage | Allowed Applications                              |
@@ -89,9 +89,9 @@ of your website and booking funnel.
 
 NB: User facing Convert products will *not* be enabled 
 
-| First Party Storage | Third Party Storage | Allowed Applications        |
-|---------------------|---------------------|-----------------------------|
-| Granted             | Granted             | Party, Meta and Paid Search |
+| First Party Storage | Third Party Storage | Allowed Applications         |
+|---------------------|---------------------|------------------------------|
+| Granted             | Granted             | Parity, Meta and Paid Search |
 
 ### Marketing (advertising) or All 
 
