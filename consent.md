@@ -19,8 +19,8 @@ It is as simple as setting the `data-storage-consent` attribute on the Triptease
 </script>
 ```
 
-The attribute can be set or updated and the Triptease script will automatically detect the change and make sure only the correct 
-storage mechanisms are allowed and that the correct Triptease products are loaded. 
+The attribute can be set or updated. Triptease script will automatically detect a change in the attribute and ensure  
+that the storage mechanisms used and products loaded are as per the updated value. 
 
 This attribute can have any of the following values: `none`, `essential`, `functionality`, `performance`, `marketing`, `all`
 
