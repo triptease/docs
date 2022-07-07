@@ -221,18 +221,13 @@ If you wish to expose reservations earlier in the funnel then make sure you use 
 
 #### checkinTime
 
-The [checkinTime](https://schema.org/checkinTime) is a combination of date and time. It cannot be just a time (despite what the name suggests).
-
-Ensure this is in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.
-This should either just be a date `2021-10-12` or a local datetime `2021-10-12T15:00:00` with optional timezone for the hotel `2021-10-12T15:00:00.000+07:00`. Do NOT convert to UTC time if at all possible.
-
+Triptease requires [checkinTime](https://schema.org/checkinTime) to be a date in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format without time or timezone e.g. `2021-10-12`.
+NB: This deviates from the specification as we have consistently seen incorrect dates provided due to timezone adjustments. Any time or timezone will be ignored.
 
 #### checkoutTime
 
-The [checkoutTime](https://schema.org/checkoutTime) is a combination of date and time. It cannot be just a time (despite what the name suggests).
-
-Ensure this is in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.
-This should either just be a date `2021-10-12` or a local datetime `2021-10-12T15:00:00` with optional timezone for the hotel `2021-10-12T15:00:00.000+07:00`. Do NOT convert to UTC time if at all possible.
+Triptease requires [checkoutTime](https://schema.org/checkoutTime) to be a date in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format without time or timezone e.g. `2021-10-13`.
+NB: This deviates from the specification as we have consistently seen incorrect dates provided due to timezone adjustments. Any time or timezone will be ignored.
 
 #### totalPrice
 
@@ -295,13 +290,13 @@ Set this to LodgingSearch*
 
 #### checkinTime
 
-The [checkinTime](https://schema.org/checkinTime) is a combination of date and time.
-We are using the same property as defined for a [LodgingReservation](https://schema.org/LodgingReservation) for consistency even though we are actually only interested in the date part.
+Triptease requires [checkinTime](https://schema.org/checkinTime) to be a date in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format without time or timezone e.g. `2021-10-12`.
+NB: This deviates from the specification as we have consistently seen incorrect dates provided due to timezone adjustments. Any time or timezone will be ignored.
 
 #### checkoutTime
 
-The [checkoutTime](https://schema.org/checkoutTime) is a combination of date and time.
-We are using the same property as defined for a [LodgingReservation](https://schema.org/LodgingReservation) for consistency even though we are actually only interested in the date part.
+Triptease requires [checkoutTime](https://schema.org/checkoutTime) to be a date in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format without time or timezone e.g. `2021-10-13`.
+NB: This deviates from the specification as we have consistently seen incorrect dates provided due to timezone adjustments. Any time or timezone will be ignored.
 
 #### numAdults (Optional)
 
