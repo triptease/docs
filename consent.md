@@ -39,8 +39,8 @@ Multiple values can also be provided. e.g. `essential, functionality, performanc
 
 ### None
 
-Storage consent `none` can be used *before* the user has given any explicit consent. No Triptease products will be run and no browser
-storage or cookies will be used. If the user closes the browser and then reopens it, Triptease will treat it as two completely 
+Storage consent `none` can be used *before* the user has given any explicit consent. No Triptease products will be run and no persistent 
+browser storage or cookies will be used. If the user closes the browser and then reopens it, Triptease will treat it as two completely 
 different users. In effect the browser is automatically forgetting any user when closed.
 
 If the user then gives consent, the `data-storage-consent` attribute should be updated so that the Triptease script can then load the 
