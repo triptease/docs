@@ -261,7 +261,8 @@ these additional parameters while trying to keep to the same naming conventions 
   "checkoutTime": "2017-04-13T12:00:00-00:00",
   "numAdults": "2",
   "numChildren": "0",
-  "numRooms": "1"
+  "numRooms": "1",
+  "offerCode": ["AA"] 
 }
 </script>
 ```
@@ -275,6 +276,7 @@ these additional parameters while trying to keep to the same naming conventions 
     <meta itemprop="numAdults"  content="2"/>
     <meta itemprop="numChildren" content="0"/>
     <meta itemprop="numRooms" content="1"/>
+    <meta itemprop="offerCode" content="AA"/>
 </div>
 ```
 
@@ -309,6 +311,11 @@ The [numChildren](https://schema.org/numChildren) is the total number of childre
 #### numRooms (Optional)
 
 The numRooms* is the total number of rooms that were searched for. Defaults to 1
+
+#### offerCode (Optional)
+
+Offer can either be a string or array of strings. It should be used any time the offers have been filtered or the price changed due 
+to the user apply any of the following: promo/discount/group/corporation/government/agency/rate/room code.
 
 **A Triptease extension*
 
