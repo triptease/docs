@@ -1,0 +1,126 @@
+openapi: 3.0.0
+servers:
+  - url: 'https://price-check.pf.triptease.io'
+info:
+  version: "1.0.0"
+  title: Triptease API
+  description: |
+    Welcome to the Triptease API documentation. This page documents all the public facing APIs that Triptease currently support. Over time we intend to expose more of the platform features as APIs so that customers and partners can build bespoke solutions. 
+    
+  contact:
+    email: dan.bodart@triptease.com
+  license:
+    name: Proprietary License
+paths:
+  /get-prices:
+    post:
+      tags:
+        - Prices API
+      summary: Polling API to retrieve latest OTA prices
+      operationId: getPrice
+      description: |
+        This API will allow the consumer to get the latest prices for a specific hotel
+          on any supported OTA. You can control if prices should include tax and in what
+          currency they should be returned.
+      
+        Prerequisites: 
+          1. A hotel `apiKey` - provided once a hotel has been setup in the platform
+          2. OTA links setup in the platform for that hotel
+
+        NB: This is a polling API, repeatedly call until `complete` returns `true`. 
+      
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GetPriceRequest'
+        description: Get Price Request
+      responses:
+        '200':
+          description: Latest Prices
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetPriceResponse'
+        '400':
+          description: Bad request
+components:
+  schemas:
+    GetPriceRequest:
+      type: object
+      required:
+        - apiKey
+        - itinerary
+        - currency
+        - pricesShouldIncludeTax
+      properties:
+        apiKey:
+          type: string
+          example: 'acbab351539049cf85043be72cd3306b'
+          description: 'This is the Hotels api key'
+          format: uuid
+        itinerary:
+          type: object
+          required:
+            - checkIn
+            - checkOut
+            - adults
+            - children
+            - childrenAges
+          properties:
+            checkIn:
+              type: string
+              format: date
+              example: '2023-08-13'
+            checkOut:
+              type: string
+              format: date
+              example: '2023-08-14'
+            adults:
+              type: integer
+              example: 2
+            children:
+              type: integer
+              example: 1
+            childrenAges:
+              type: array
+              items:
+                type: integer
+                example: 7
+        currency:
+          type: string
+          example: 'EUR'
+        pricesShouldIncludeTax:
+          type: boolean
+          example: true                
+    GetPriceResponse:
+      type: object
+      properties:
+        request:
+          $ref: '#/components/schemas/GetPriceRequest'
+        complete: 
+          type: boolean
+          description: Used to determin if all prices have aquired
+        nightlyPrices:  
+          type: array
+          items:
+            type: object
+            properties:
+              agentName:
+                type: string
+                example: 'booking'
+              price:
+                type: object
+                properties:
+                  value:
+                    type: number
+                    example: 267.94
+                  currency:
+                    type: string
+                    example: 'EUR'
+                  convertedFrom:
+                    type: string
+                    example: 'USD'
+                  convertedRate:
+                    type: number
+                    example: 0.94015
