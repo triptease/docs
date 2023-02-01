@@ -22,7 +22,7 @@ Our recommended way of getting this script onto your page is via a tag manager (
 
 ### Can the script work with cookie banners?
 
-Yes, please follow our [consent mode guide](/consent.md)
+Yes, please follow our [consent mode guide](/consent)
 
 ### What does the script do? 
 
@@ -76,7 +76,7 @@ For more information head over to our help section on [How Triptease collects an
 
 ### Is the script GDPR compliant?
 
-Yes, please follow our [consent mode guide](/consent.md)
+Yes, please follow our [consent mode guide](/consent)
 
 ### What is the performance impact on my page?
 
@@ -95,4 +95,4 @@ You should see a minimal change in score with or without our script.
 ### What happens if my booking engine is not supported?
 
 If your booking engine is not supported, please reach out to us, and we may be able to integrate with your booking engine.
-Alternatively, you can provide us the data we need using industry standard [Structured Data](https://docs.triptease.io/structured-data).
+Alternatively, you can provide us the data we need using industry standard [Structured Data](/structured-data).
