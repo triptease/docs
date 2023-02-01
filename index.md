@@ -18,7 +18,11 @@ src="https://onboard.triptease.io/bootstrap.js?integrationId=REPLACE_ME">
 </script>
 ```
 
-Our recommended way of getting this script onto your page is via a tag manager (e.g. GTM).
+Our recommended way of getting this script onto your page is via a tag manager (e.g. GTM). 
+
+### Can the script work with cookie banners?
+
+Yes, please follow our [consent mode guide](/consent.md)
 
 ### What does the script do? 
 
@@ -69,6 +73,10 @@ We never read any sensitive information such as:
     - Expiry etc
 
 For more information head over to our help section on [How Triptease collects and uses data](https://help.triptease.com/en/collections/102136-getting-started#how-triptease-collects-and-uses-data).
+
+### Is the script GDPR compliant?
+
+Yes, please follow our [consent mode guide](/consent.md)
 
 ### What is the performance impact on my page?
 
