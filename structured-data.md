@@ -14,9 +14,13 @@ you may want to use the microdata format embedded in the HTML so that you keep t
 
 Triptease supports all three formats so if you are already using one then don’t worry about switching.
 
-### Handling Data Updates
+### Handling data updates
 
 If you are a SPA (Single Page App) or support multiple updates on the same page (i.e. searches), please update the HTML/JSON in place. Do NOT keep adding additional elements as this will just corrupt the data.
+
+### Validating your code
+
+You can use [schema.org's validator](https://validator.schema.org) to check the output of your structured data and fix any errors.
 
 ### Getting started
 
@@ -36,7 +40,7 @@ Advanced
 
 *If you are already using another form of identification (apiKeys, propertyCodes etc) then you can safely skip this step*
 
-This is the simplest and most important meta data you can add through out your marketing website and booking engine. Ideally you want this on every page.
+This is the simplest and most important meta data you can add through out your marketing website and booking engine. Ideally you want this on every page that represents a single hotel.
 Doing this will automatically allow your hotel to appear on Google search pages and Google Maps. Just putting the hotel name and @type on each page will help Triptease identify your hotel automatically
 
 #### JSON-LD Example
