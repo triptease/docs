@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triptease Event Data</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+<script>
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://onboard.triptease.io/docs/index.html' + window.location.hash;
+    iframe.width = '100%';
+    iframe.height = '100%';
+    iframe.frameBorder = '0';
+    document.body.appendChild(iframe);
+    window.addEventListener('message', e => {if(e.data.type === 'iframe-hashchange') window.history.pushState(undefined, undefined, e.data.hash)})
+</script>
+</body>
+</html>
