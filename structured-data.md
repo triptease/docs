@@ -208,6 +208,18 @@ After identifying the hotel, the next-most important data you can provide is the
         <dd><span itemprop="totalPrice">800.00</span> <span itemprop="priceCurrency">GBP</span></dd>
         <dd><span itemprop="basePrice">750.00</span> <span>GBP</span></dd>
     </dl>
+    <div itemprop="provider" itemscope itemtype="http://schema.org/Hotel">
+        <span itemprop="name">Sea View Hotel</span>
+        <meta itemprop="identifier" content="8901234">
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">1 Piccadilly</span>
+            <span itemprop="addressLocality">St. James's</span>
+            <span itemprop="addressRegion">London</span>
+            <span itemprop="postalCode">W1 9B</span>
+            <span itemprop="addressCountry">United Kingdom</span>
+        </div>
+        <span itemprop="telephone">+44 1234 5678</span>
+    </div>
 </div>
 ```
 
@@ -414,6 +426,11 @@ Multiple offers can added to a page either inside a single script tag containing
     <meta itemprop="price" content="99.00">$99.00
     <meta itemprop="priceCurrency" content="USD">
     <meta itemprop="unitText" content="Nightly">per night
+  </span>
+  <span itemprop="offeredBy" itemscope itemtype="http://schema.org/Hotel">
+    <span itemprop="name">Sea View Hotel</span>
+    <meta itemprop="identifier" content="123456">
+    <span itemprop="brand">Great Escapes</span>
   </span>
 </div>
 ```
