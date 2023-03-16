@@ -101,7 +101,7 @@ Doing this will automatically allow your hotel to appear on Google search pages 
 </div>
 ```
 
-Lets walk through this:
+Let's walk through this:
 
 #### @type
 
@@ -180,7 +180,13 @@ After identifying the hotel, the next-most important data you can provide is the
   "checkoutTime": "2017-04-13T11:00:00-00:00",
   "totalPrice": "800.00",
   "basePrice": "750.00",
-  "priceCurrency": "GBP"
+  "priceCurrency": "GBP",
+  "provider": {
+    "@type": "Hotel",
+    "name": "Sea View Hotel",
+    "identifier": "1234567",
+    "brand": "Great Escapes"
+  }
 }
 </script>
 ```
@@ -205,7 +211,7 @@ After identifying the hotel, the next-most important data you can provide is the
 </div>
 ```
 
-Lets walk through this:
+Let's walk through this:
 
 #### @type
 
@@ -245,6 +251,10 @@ The basePrice is the base price for the duration of the stay *excluding* taxes e
 
 The [priceCurrency](https://schema.org/priceCurrency) is the three digit ISO currency code.
 
+#### provider (Optional)
+
+The [provider](https://schema.org/provider) field should be set to the [Hotel](https://schema.org/Hotel), [LodgingBusiness](https://schema.org/LodgingBusiness) or [BedAndBreakfast](https://schema.org/BedAndBreakfast) to which the individual reservation applies.
+> When not provided, it defaults to the hotel in [Identification](#identification) section.
 
 
 ### Lodging Search
@@ -284,7 +294,7 @@ these additional parameters while trying to keep to the same naming conventions 
 </div>
 ```
 
-Lets walk through this:
+Let's walk through this:
 
 #### @context
 
@@ -355,6 +365,12 @@ Multiple offers can added to a page either inside a single script tag containing
       "price": "99.00",
       "priceCurrency": "USD",
       "unitText": "Nightly"
+    },
+    "offeredBy": {
+      "@type": "Hotel",
+      "name": "Sea View Hotel",
+      "identifier": "1234567",
+      "brand": "Great Escapes"
     }
   },
   {
@@ -372,6 +388,12 @@ Multiple offers can added to a page either inside a single script tag containing
       "price": "88.00",
       "priceCurrency": "USD",
       "unitText": "Nightly"
+    },
+    "offeredBy": {
+      "@type": "Hotel",
+      "name": "Garden View Hotel",
+      "identifier": "8901234",
+      "brand": "Great Escapes"
     }
   }
 ]
@@ -396,7 +418,7 @@ Multiple offers can added to a page either inside a single script tag containing
 </div>
 ```
 
-Lets walk through this:
+Let's walk through this:
 
 #### @type
 
@@ -423,6 +445,12 @@ price: The numeric value of the offer
 currency: The 3 character currency code of the offer
 
 unitText (optional): "Total" if the price is for the entire stay. "Nightly" if the price is per night. Defaults to "Nightly".
+
+#### offeredBy (Optional)
+
+The [offeredBy](https://schema.org/offeredBy) field should be set to the [Hotel](https://schema.org/Hotel), [LodgingBusiness](https://schema.org/LodgingBusiness) or [BedAndBreakfast](https://schema.org/BedAndBreakfast) to which the individual offer applies.
+> When not provided, it defaults to the hotel in [Identification](#identification) section.
+ 
 
 ## Advanced
 
@@ -453,7 +481,7 @@ This allow you to tell us you don't have any availability for the search just do
 </div>
 ```
 
-Lets walk through this:
+Let's walk through this:
 
 #### @type
 
@@ -493,7 +521,7 @@ This allows you to tell us about your booking engine or marketing site. This is 
 </div>
 ```
 
-Lets walk through this:
+Let's walk through this:
 
 #### @type
 
