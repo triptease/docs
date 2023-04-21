@@ -22,7 +22,7 @@ Our recommended way of getting this script onto your page is via a tag manager (
 
 ### Can the script work with cookie banners?
 
-Yes, please follow our [consent mode guide](/consent)
+Yes, please follow our [consent mode guide](/consent).
 
 ### What does the script do? 
 
@@ -76,7 +76,11 @@ For more information head over to our help section on [How Triptease collects an
 
 ### Is the script GDPR compliant?
 
-Yes, please follow our [consent mode guide](/consent)
+Please follow our [consent mode guide](/consent) to pass the user's cookie choices to the Triptease script.
+
+If this is not an option for you at this time (as it would require development work on your end), we recommend that you only add Triptease script when user has consented to Marketing / Advertising or all cookies.
+
+Either of these two options ensure GDPR compliance. However, we recommend the first option as it provides you better Analytics and more opportunities for our products to work.
 
 ### What is the performance impact on my page?
 
