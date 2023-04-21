@@ -4,9 +4,9 @@
 
 Consent mode allows you to control what type of functionality is enabled across Triptease products. This in turn controls the 
 usage of first and third party storage mechanisms of the browser and which Triptease products run.
-If your site has a cookie/storage banner used for GDPR compliance, you can pass the user's consent to the Triptease script.
+If your site has a cookie/storage banner used for GDPR compliance, you can pass the user's choices to the Triptease script.
 
-## How do you change Consent Mode?
+## How do you provide Consent Mode?
 
 It is as simple as setting the `data-storage-consent` attribute on the Triptease script tag. 
 
@@ -19,8 +19,7 @@ It is as simple as setting the `data-storage-consent` attribute on the Triptease
 </script>
 ```
 
-The attribute can be set or updated. Triptease script will automatically detect a change in the attribute and ensure  
-that the storage mechanisms used and products loaded are as per the updated value. 
+The attribute can be set or updated. Triptease script will automatically detect a change in the attribute and ensure that the storage mechanisms used and products loaded are as per the updated value. 
 
 This attribute can have any of the following values: `none`, `essential`, `functionality`, `performance`, `marketing`, `all`
 
@@ -34,6 +33,30 @@ Multiple values can also be provided. e.g. `essential, functionality, performanc
         data-storage-consent="functionality, performance">
 </script>
 ```
+
+## How do you map your user's cookie choices to the consent modes?
+
+We have listed the terms typically used in cookie banners, grouping the common aliases together, in the table below. Please use this as a guide.   
+
+| Chosen on Cookie Banner                       | Consent Mode to Use |
+|-----------------------------------------------|---------------------|
+| Deny                                          | `none`              |
+| Essential / Necessary                         | `essential`         |
+| Functionality / Personalisation / Preferences | `functionality`     |
+| Performance / Statistics / Analytics          | `performance`       |
+| Marketing / Advertising                       | `marketing`         |
+| Allow All                                     | `all`               |
+
+Here is a typical example of a cookie banner where the user has selected Necessary, Preferences and Statistics.
+You would provide `data-storage-consent="essential, functionality, performance"` in this scenario.  
+
+![cookie-banner-example.png](assets/images/cookie-banner-example.png)
+
+## What is the default behaviour?
+
+If `data-storage-consent` attribute has not been set we assume the consent mode is `all`. We consider the addition of our script to be implicit consent in this case.
+
+We understand that providing consent mode may not be an option for you at this time (as it would require development work on your end). In such cases we recommend that you only add Triptease script when user has consented to Marketing / Advertising or all cookies.
 
 ## What does each Consent Mode do?
 
@@ -138,4 +161,4 @@ When `marketing` or `all` storage consent is present it will enable all Tripteas
 ### What do we mean by Cookie or Storage?
 
 In this document we will refer to storage to include cookies and any other web browser technology like localStorage or sessionStorage.
-Triptease does not use browser fingerprinting or any other means that can not be controlled by the end user.
+Triptease does not use browser fingerprinting or any other means that cannot be controlled by the end user.
