@@ -9,6 +9,7 @@ If your site has a cookie/storage banner used for GDPR compliance, you can pass 
 ## How do you provide Consent Mode?
 
 It is as simple as setting the `data-storage-consent` attribute on the Triptease script tag. 
+Note that the value should not be hardcoded in your HTML (or Tag Manager etc.) but should be based on the user's choices on the cookie banner.  
 
 #### Example:
 
