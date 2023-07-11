@@ -50,6 +50,12 @@ If your booking engine is in an iframe, the script should be placed in two place
 1. On the parent page, towards the end of the `<body>` tag
 2. On the booking engine iframe, towards the end of the `<body>` tag
 
+### How should your content security policy be changed?
+
+If you have a Content Security Policy (CSP) in place, you will need to add `triptease.io *.triptease.io` to the `script-src` directive of Content-Security-Policy header.
+
+]\This defines Triptease domain and subdomains as a trusted source for scripts and ensures that the Triptease script will not be blocked by the browser.
+
 ### What does the script do? 
 
 The script performs the following tasks:
