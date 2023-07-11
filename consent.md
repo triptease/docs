@@ -57,8 +57,6 @@ You would provide `data-storage-consent="essential, functionality, performance"`
 
 If `data-storage-consent` attribute has not been set we assume the consent mode is `all`. We consider the addition of our script to be implicit consent in this case.
 
-We understand that providing consent mode may not be an option for you at this time (as it would require development work on your end). In such cases we recommend that you only add Triptease script when user has consented to Marketing / Advertising or all cookies.
-
 ## What does each Consent Mode do?
 
 ### None
@@ -83,7 +81,7 @@ correct applications and allow storage access.
 ```
 
 
-#### Essential (strictly necessary)
+### Essential (strictly necessary)
 
 If the user only gives `essential` or strictly necessary storage consent, then Triptease will actually treat this 
 in exactly the same way as `none`. So no storage or applications will be allowed. 
