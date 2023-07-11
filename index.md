@@ -18,11 +18,37 @@ src="https://onboard.triptease.io/bootstrap.js?integrationId=REPLACE_ME">
 </script>
 ```
 
-Our recommended way of getting this script onto your page is via a tag manager (e.g. GTM). 
+Our recommended way of getting this script onto your page is via a tag manager (e.g. GTM).
 
 ### Can the script work with cookie banners?
 
-Yes, please see [cookie banner](/cookie-banner) for details and follow our [consent mode guide](/consent).
+Yes, the script can work with cookie banners. Here are the available options:
+
+1. Follow our [consent mode guide](/consent) to pass the user's cookie choices to the Triptease script.
+2. If implementing the consent mode is not currently feasible for you (as it would require development work on your end), please contact Triptease. We can assess if your Consent Manager Provider is already supported or if we can add support.
+3. Failing that, it is recommended to add the Triptease script only when the user has given consent to Marketing/Advertising or all cookies. 
+
+We advise against choosing option 3. Please refer to the [cookie banner](/cookie-banner) for detailed information on why this option is not recommended.
+
+### Is the script GDPR compliant?
+
+Yes, the script is GDPR compliant, provided you have chosen one of the three options listed [above](#can-the-script-work-with-cookie-banners).
+
+### When should the script be added?
+
+The script should be added as early as possible. It is designed to load asynchronously, which means it will not block the rendering of your page.
+
+If the script has been wired up to receive user's cookie choices (options 1 or 2 [above](#can-the-script-work-with-cookie-banners)), you don't need to wait for the user to explicitly make a cookie choice before adding the script.
+
+If you have chosen option 3 [above](#can-the-script-work-with-cookie-banners), please ensure that a page reload is not required after the user has given consent for the script to be added.
+
+### Where should the script be placed?
+
+The script should be placed towards the end of the `<body>` tag.
+
+If your booking engine is in an iframe, the script should be placed in two places:
+1. On the parent page, towards the end of the `<body>` tag
+2. On the booking engine iframe, towards the end of the `<body>` tag
 
 ### What does the script do? 
 
@@ -33,25 +59,25 @@ The script performs the following tasks:
 - Loads the correct products for that page
 - Reads page specific data (see below) and provides it to the loaded products
 
-### What specific data do we read?
+### What data do we read?
 
 We read the following information (if available)
 - Search query
-    - Checkin, 
-    - Checkout, 
-    - Number of adults, 
+    - Checkin 
+    - Checkout 
+    - Number of adults 
     - Number of children
 - Search results
     - Room and rate names
     - Price
 - Booking confirmation pages
     - Booking reference
-    - Total price, 
+    - Total price 
     - Room only price
     - Room and rate names
 - Guest’s information
-    - IP address (always masked), 
-    - Approximate Geo location (country/region), 
+    - IP address (always masked) 
+    - Approximate Geo location (country/region) 
     - Browser and device information (from User Agent)
 - Hotel information
     - Street
@@ -66,22 +92,13 @@ We never read any sensitive information such as:
 - Guest details 
     - First / last name,
     - Address
-    - Email (expect when you have opted-in for our Cart Abandonment feature)
+    - Email (expect when you have opted-in for Cart Abandonment feature)
     - Telephone etc
 - Payment details 
     - Card number
     - Expiry etc
 
 For more information head over to our help section on [How Triptease collects and uses data](https://help.triptease.com/en/collections/102136-getting-started#how-triptease-collects-and-uses-data).
-
-### Is the script GDPR compliant?
-
-Here are the options available to you to ensure GDPR compliance:
-1. Please follow our [consent mode guide](/consent) to pass the user's cookie choices to the Triptease script.
-2. If this is not an option for you at this time (as it would require development work on your end), please reach out to Triptease. We can assess whether your Consent Manager Provider is already supported or if it's possible for us to add support for it.
-3. Failing that, we recommend that you only add Triptease script when user has consented to Marketing / Advertising or all cookies.
-
-We advise against choosing option 3. Please refer to [cookie banner](/cookie-banner) for detailed information on why this option is not recommended.
 
 ### What is the performance impact on my page?
 
