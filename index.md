@@ -92,7 +92,7 @@ We never read any sensitive information such as:
 - Guest details 
     - First / last name,
     - Address
-    - Email (expect when you have opted-in for Cart Abandonment feature)
+    - Email (except when you have opted-in for Cart Abandonment feature)
     - Telephone etc
 - Payment details 
     - Card number
