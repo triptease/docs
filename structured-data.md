@@ -16,11 +16,13 @@ Triptease supports all three formats so if you are already using one then don’
 
 ### Handling data updates
 
-If you are a SPA (Single Page App) or support multiple updates on the same page (i.e. searches), please update the HTML/JSON in place. Do NOT keep adding additional elements as this will just corrupt the data.
+If you are an SPA (Single Page App) or support multiple updates on the same page (i.e. searches), please update the HTML/JSON in place. Do NOT keep adding additional elements as this will just corrupt the data.
 
 ### Validating your code
 
 You can use [schema.org's validator](https://validator.schema.org) to check the output of your structured data and fix any errors.
+
+A common error to watch out for is trailing commas in JSON-LD.
 
 ### Getting started
 
@@ -355,7 +357,7 @@ These are the offer or rooms and rates the hotel has available for the specified
 
 ![Schema Diagram showing the relationship between entities](https://schema.org/docs/schema_hotels_1.png)
 
-Multiple offers can added to a page either inside a single script tag containing an array or multiple script/div tags etc.
+Multiple offers can be added to a page either inside a single script tag containing an array or multiple script/div tags etc.
 
 #### JSON-LD Example
 
@@ -475,7 +477,9 @@ The [offeredBy](https://schema.org/offeredBy) field should be set to the [Hotel]
 
 *Used by: Triptease*
 
-This allow you to tell us you don't have any availability for the search just done
+This allows you to tell us you don't have any availability for the search that was just performed. The search should be provided using LodgingSearch.
+
+This is applicable even if you display availability for alternative dates or alternative properties. Note that the LodgingSearch should be the original search that was performed. 
 
 #### JSON-LD Example
 
@@ -506,7 +510,7 @@ Set this to [OfferCatalog](http://schema.org/OfferCatalog)
 
 #### numberOfItems
 
-Just set this to zero so we know you have no availability. See https://schema.org/numberOfItems
+Just set this to zero, so we know you have no availability. See https://schema.org/numberOfItems
 
 
 
