@@ -29,8 +29,19 @@ These limitations are even more prevalent when you have a non-invasive banner wh
 
 At Triptease, we understand that compliance and privacy are paramount for you and your guests. However, we believe that meeting these requirements should not result in sacrificing the products and services you have invested in. That's why we have developed Consent Mode, a solution that empowers you to retain control over Triptease's functionality while respecting your users' consent preferences.
 
-We care about the user’s “right to be forgotten” so much that we don’t just limit cookie consent to cookies and instead apply it to all persistent storage such as local storage. When a user rejects cookies we only rely on non persistent storage such as session storage. If the user closes the tab and returns the person is well and truly forgotten and seems like a completely different person.
+We care about the user’s “right to be forgotten” so much that we don’t just limit cookie consent to cookies and instead apply it to all persistent storage such as local storage. When a user rejects cookies we only rely on non-persistent storage such as session storage. If the user closes the tab and returns later, the person is well and truly forgotten and seems like a completely different person.
 
-This means you can add Triptease script all the time, even without the user accepting cookies, and as long as you have passed the user’s cookie choices to the Triptease script you are compliant.
+This means you can add Triptease script all the time, even without the user accepting cookies, and as long as you have passed the user’s cookie choices to the Triptease script you are compliant. See below for IP address justification.
 
 For more details about consent mode, and how to implement it please follow our [consent mode guide](https://docs.triptease.io/consent).
+
+##### IP address justification
+
+When Triptease script is added, the client browser establishes a connection with Triptease server which provides the IP address.
+
+Whilst IP address is considered personal data, it is not necessary to obtain user consent as there is legitimate interest.
+
+Three-part test for legitimate interest:
+1. Purpose Test: Triptease has a valid reason to process the IP address in order to provide you with services on the website and track the services you have accessed outside the website (e.g. Paid Search, Meta, Retargeting).
+2. Necessity Test: There are no alternative methods that are less intrusive and equally effective.
+3. Balancing Test: This does not override the data subject's interests or fundamental rights and freedoms. The complete IP address is not stored by Triptease, making it impossible to identify the data subject.
