@@ -340,6 +340,8 @@ The [numChildren](https://schema.org/numChildren) is the total number of childre
 
 The numRooms* is the total number of rooms that were searched for. Defaults to 1
 
+> `numRooms` should not be present unless the search results could show a different price to what a guest would pay if they were only booking one room (e.g. a user searches for 3 rooms and the prices displayed are for the total of all 3 rooms) 
+
 #### offerCode (Optional)
 
 Offer can either be a string or array of strings. It should be used any time the offers have been filtered or the price changed due 
