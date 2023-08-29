@@ -183,6 +183,7 @@ After identifying the hotel, the next-most important data you can provide is the
   "totalPrice": "800.00",
   "basePrice": "750.00",
   "priceCurrency": "GBP",
+  "offerCode": ["AA"],
   "provider": {
     "@type": "Hotel",
     "name": "Sea View Hotel",
@@ -209,6 +210,8 @@ After identifying the hotel, the next-most important data you can provide is the
         <dt>Total</dt>
         <dd><span itemprop="totalPrice">800.00</span> <span itemprop="priceCurrency">GBP</span></dd>
         <dd><span itemprop="basePrice">750.00</span> <span>GBP</span></dd>
+        <dt>Promotion/Discount</dt>
+        <dd><span itemprop="offerCode"/>AA</span></dd>
     </dl>
     <div itemprop="provider" itemscope itemtype="http://schema.org/Hotel">
         <span itemprop="name">Sea View Hotel</span>
@@ -231,17 +234,14 @@ Let's walk through this:
 
 Set this to [LodgingReservation](https://schema.org/LodgingReservation)
 
-
 #### reservationId
 
 The [reservationId](https://schema.org/reservationId) should be unique and verifiable.
-
 
 #### reservationStatus
 
 The [reservationStatus](https://schema.org/reservationStatus) should be set to [ReservationConfirmed](https://schema.org/ReservationConfirmed).
 If you wish to expose reservations earlier in the funnel then make sure you use one of the other [ReservationStatusType](https://schema.org/ReservationStatusType). If you support cancellations please also add the correct structured data to that page and change the [reservationStatus](https://schema.org/reservationStatus) to [ReservationCancelled](https://schema.org/ReservationCancelled)
-
 
 #### checkinTime
 
@@ -264,6 +264,13 @@ The basePrice is the base price for the duration of the stay *excluding* taxes e
 #### priceCurrency
 
 The [priceCurrency](https://schema.org/priceCurrency) is the three digit ISO currency code.
+
+#### offerCode (Optional)
+
+Offer can either be a string or array of strings. It should be used any time the offers have been filtered or the price changed due
+to the user apply any of the following: promo/discount/group/corporation/government/agency/rate/room code.
+
+**A Triptease extension*
 
 #### provider (Optional)
 
