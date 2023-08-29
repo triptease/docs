@@ -552,7 +552,7 @@ Set this to [SoftwareApplication](http://schema.org/SoftwareApplication)
 
 #### name
 
-The [name](https://schema.org/name) should contain the booking engine name
+The [name](https://schema.org/name) should contain the booking engine name. The format is alphanumeric, single-word only (e.g. QuickRez) .
 
 #### version
 
