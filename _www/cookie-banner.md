@@ -33,7 +33,7 @@ We care about the user’s “right to be forgotten” so much that we don’t j
 
 This means you can add Triptease script all the time, even without the user accepting cookies, and as long as you have passed the user’s cookie choices to the Triptease script you are compliant. See below for IP address justification.
 
-For more details about consent mode, and how to implement it please follow our [consent mode guide](https://docs.triptease.io/consent).
+For more details about consent mode, and how to implement it please follow our [consent mode guide]({% link consent.md %}).
 
 ##### IP address justification
 

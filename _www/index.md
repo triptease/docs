@@ -24,11 +24,11 @@ Our recommended way of getting this script onto your page is via a tag manager (
 
 Yes, the script can work with cookie banners. Here are the available options:
 
-1. Follow our [consent mode guide](/consent) to pass the user's cookie choices to the Triptease script.
+1. Follow our [consent mode guide]({% link consent.md %}) to pass the user's cookie choices to the Triptease script.
 2. If implementing the consent mode is not currently feasible for you (as it would require development work on your end), please contact Triptease. We can assess if your Consent Manager Provider is already supported or if we can add support.
 3. Failing that, it is recommended to add the Triptease script only when the user has given consent to Marketing/Advertising or all cookies. 
 
-We advise against choosing option 3. Please refer to the [cookie banner](/cookie-banner) for detailed information on why this option is not recommended.
+We advise against choosing option 3. Please refer to the [cookie banner]({% link cookie-banner.md %}) for detailed information on why this option is not recommended.
 
 ### Is the script GDPR compliant?
 
@@ -123,4 +123,4 @@ You should see a minimal change in score with or without our script.
 ### What happens if my booking engine is not supported?
 
 If your booking engine is not supported, please reach out to us, and we may be able to integrate with your booking engine.
-Alternatively, you can provide us the data we need using industry standard [Structured Data](/structured-data).
+Alternatively, you can provide us the data we need using industry standard [Structured Data]({% link structured-data.md %}).
