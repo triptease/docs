@@ -1,3 +1,4 @@
+source: _www
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-coffeescript
