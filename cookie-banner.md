@@ -41,7 +41,10 @@ When Triptease script is added, the client browser establishes a connection with
 
 Whilst IP address is considered personal data, it is not necessary to obtain user consent as there is legitimate interest.
 
-Three-part test for legitimate interest:
-1. Purpose Test: Triptease has a valid reason to process the IP address in order to provide you with services on the website and track the services you have accessed outside the website (e.g. Paid Search, Meta, Retargeting).
-2. Necessity Test: There are no alternative methods that are less intrusive and equally effective.
-3. Balancing Test: This does not override the data subject's interests or fundamental rights and freedoms. The complete IP address is not stored by Triptease, making it impossible to identify the data subject.
+**Three-part test** for legitimate interest:
+1. ✅ **Purpose Test**  
+Triptease has a valid reason to process the IP address in order to provide you with services on the website and track the services you have accessed outside the website (e.g. Paid Search, Meta, Retargeting).
+2. ✅ **Necessity Test**  
+There are no alternative methods that are less intrusive and equally effective.
+3. ✅ **Balancing Test**  
+This does not override the data subject's interests or fundamental rights and freedoms. The complete IP address is not stored by Triptease, making it impossible to identify the data subject.
