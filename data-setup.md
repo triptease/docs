@@ -32,7 +32,7 @@ Once you have both of those you need to share your BigQuery account with Triptea
 NB. Having both a service account and a user account is recommended as it allows you to explore the data as a user and 
 then use the service account for automated processes etc (Like BI Access).
 
-### Will you be charged by BigQuery?
+### Will you be charged by Google?
 
 Google BigQuery has a free tier that allows you to run 1TB of queries per month for free. This should easily cover 
 most use cases including querying the data multiple times a day. If however you run complex queries that process most
