@@ -36,7 +36,7 @@ then use the service account for automated processes etc (Like BI Access).
 
 Google BigQuery has a free tier that allows you to run 1TB of queries per month for free. This should easily cover 
 most use cases including querying the data multiple times a day. If however you run complex queries that process most
-of your data many times a day, you could start to be charged by Google. In this case you will either cant to copy the 
+of your data many times a day, you could start to be charged by Google. In this case you will either want to copy the 
 data into your own data-warehouse or enable query caching in your BI tool of choice.
 
 ## What are the next steps?
