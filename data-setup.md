@@ -9,7 +9,7 @@ but also allow you to decided how fresh you want the data to be.
 
 BigQuery provides a number of advantages from an integration perspective:
 1. BigQuery is natively supported by all major BI tools (e.g. Tableau, Looker, PowerBI, Qlik etc.)
-2. Storage and query costs are separate, this allows Triptease to cover all storage costs and you only pay for the queries you run that our outside the free tier. This allows you to choose between on-demand or scheduled refreshes of your data.
+2. Storage and query costs are separate, this allows Triptease to cover all storage costs and you only pay for the queries you run that are outside the free tier. This allows you to choose between on-demand or scheduled refreshes of your data.
 
 ## What data is available?
 
