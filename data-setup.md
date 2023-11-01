@@ -11,6 +11,12 @@ BigQuery provides a number of advantages from an integration perspective:
 1. BigQuery is natively supported by all major BI tools (e.g. Tableau, Looker, PowerBI, Qlik etc.)
 2. Storage and query costs are separate, this allows Triptease to cover all storage costs and you only pay for the queries you run that our outside the free tier. This allows you to choose between on-demand or scheduled refreshes of your data.
 
+## What data is available?
+
+Currently we have the following data available:
+
+* [Guest Event Data](https://docs.triptease.io/data)
+* Parity Data (Coming Soon)
 
 ## What do you need to get started?
 
@@ -25,6 +31,8 @@ Once you have both of those you need to share your BigQuery account with Triptea
 
 NB. Having both a service account and a user account is recommended as it allows you to explore the data as a user and 
 then use the service account for automated processes etc (Like BI Access).
+
+### Will you be charged by BigQuery
 
 ## What are the next steps?
 
