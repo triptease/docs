@@ -17,18 +17,18 @@ BigQuery provides a number of advantages from an integration perspective:
 You will need the following:
 
 1. A BigQuery account (either a user and/or service account)
-   * You can signup for their free tier here: https://cloud.google.com/bigquery/
+   * You can signup for the [free tier here](https://cloud.google.com/bigquery/)
 2. A BigQuery project where you want the data to be visible
-   * You can create a project here: https://console.cloud.google.com/projectcreate
+   * You can create a [project here](https://console.cloud.google.com/projectcreate)
 
-Once you have both of those you need to share you BigQuery account with Triptease so we can share the data with you.
+Once you have both of those you need to share your BigQuery account with Triptease so we can share the data with you.
 
 NB. Having both a service account and a user account is recommended as it allows you to explore the data as a user and 
 then use the service account for automated processes etc (Like BI Access).
 
 ## What are the next steps?
 
-Once Triptease has added your account, you can then follow this link: https://console.cloud.google.com/bigquery/analytics-hub/exchanges(analyticshub:search)?queryText=triptease
+Once Triptease has added your account, you can then follow [this link](https://console.cloud.google.com/bigquery/analytics-hub/exchanges(analyticshub:search)?queryText=triptease)
 
 If prompted click the "ENABLE" button to allow access to Analytics Hub
 
@@ -54,21 +54,22 @@ From here you can explore the data and write SQL queries directly in your browse
 
 ### Looker Studio (formerly Google Data Studio)
 
-https://support.google.com/looker-studio/answer/6295968?hl=en 
+[https://support.google.com/looker-studio/answer/6295968?hl=en](https://support.google.com/looker-studio/answer/6295968?hl=en)
+ 
 
 ### Looker
 
-https://cloud.google.com/looker/docs/db-config-google-bigquery
+[https://cloud.google.com/looker/docs/db-config-google-bigquery](https://cloud.google.com/looker/docs/db-config-google-bigquery)
 
 ### Tableau
 
-https://help.tableau.com/current/pro/desktop/en-us/examples_googlebigquery.htm
+[https://help.tableau.com/current/pro/desktop/en-us/examples_googlebigquery.htm](https://help.tableau.com/current/pro/desktop/en-us/examples_googlebigquery.htm)
 
 ### PowerBI
 
-https://learn.microsoft.com/en-us/power-query/connectors/google-bigquery
+[https://learn.microsoft.com/en-us/power-query/connectors/google-bigquery](https://learn.microsoft.com/en-us/power-query/connectors/google-bigquery)
 
 ### Qlik
 
-https://help.qlik.com/en-US/connectors/Subsystems/ODBC_connector_help/Content/Connectors_ODBC/GoogleBigQuery/Create-GBQ-Connection.htm
+[https://help.qlik.com/en-US/connectors/Subsystems/ODBC_connector_help/Content/Connectors_ODBC/GoogleBigQuery/Create-GBQ-Connection.htmhttps://help.qlik.com/en-US/connectors/Subsystems/ODBC_connector_help/Content/Connectors_ODBC/GoogleBigQuery/Create-GBQ-Connection.htm](https://help.qlik.com/en-US/connectors/Subsystems/ODBC_connector_help/Content/Connectors_ODBC/GoogleBigQuery/Create-GBQ-Connection.htm)
 
