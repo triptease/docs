@@ -65,6 +65,9 @@ From here you can explore the data and write SQL queries directly in your browse
 
 ## How do you connect your BI tool?
 
+One you have setup and tested access from BigQuery, you can now use the service account to setup access from BigQuery to
+your BI tool of choice:
+
 ### Looker Studio (formerly Google Data Studio)
 
 [https://support.google.com/looker-studio/answer/6295968?hl=en](https://support.google.com/looker-studio/answer/6295968?hl=en)
