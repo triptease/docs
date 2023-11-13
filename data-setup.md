@@ -70,22 +70,32 @@ your BI tool of choice:
 
 ### Looker Studio (formerly Google Data Studio)
 
-[https://support.google.com/looker-studio/answer/6295968?hl=en](https://support.google.com/looker-studio/answer/6295968?hl=en)
+[Looker Studio setup BigQuery](https://support.google.com/looker-studio/answer/6295968?hl=en)
  
 
 ### Looker
 
-[https://cloud.google.com/looker/docs/db-config-google-bigquery](https://cloud.google.com/looker/docs/db-config-google-bigquery)
+[Google Looker Configure BigQuery](https://cloud.google.com/looker/docs/db-config-google-bigquery)
 
 ### Tableau
 
-[https://help.tableau.com/current/pro/desktop/en-us/examples_googlebigquery.htm](https://help.tableau.com/current/pro/desktop/en-us/examples_googlebigquery.htm)
+[Tableau Desktop -> Google BigQuery](https://help.tableau.com/current/pro/desktop/en-us/examples_googlebigquery.htm)
 
 ### PowerBI
 
-[https://learn.microsoft.com/en-us/power-query/connectors/google-bigquery](https://learn.microsoft.com/en-us/power-query/connectors/google-bigquery)
+[Microsoft Power BI Google BigQuery Connection](https://learn.microsoft.com/en-us/power-query/connectors/google-bigquery)
 
 ### Qlik
 
-[https://help.qlik.com/en-US/connectors/Subsystems/ODBC_connector_help/Content/Connectors_ODBC/GoogleBigQuery/Create-GBQ-Connection.htmhttps://help.qlik.com/en-US/connectors/Subsystems/ODBC_connector_help/Content/Connectors_ODBC/GoogleBigQuery/Create-GBQ-Connection.htm](https://help.qlik.com/en-US/connectors/Subsystems/ODBC_connector_help/Content/Connectors_ODBC/GoogleBigQuery/Create-GBQ-Connection.htm)
+[Qlik Create Google BigQuery Connection](https://help.qlik.com/en-US/connectors/Subsystems/ODBC_connector_help/Content/Connectors_ODBC/GoogleBigQuery/Create-GBQ-Connection.htm)
 
+### Pentaho
+
+[Pentaho 9.5 Setup Google BigQuery](https://help.hitachivantara.com/Documentation/Pentaho/Data_Integration_and_Analytics/9.5/Setup/Google_BigQuery)
+
+
+### Scheduled CSV Export to Bucket
+
+[EXPORT DATA statement](https://cloud.google.com/bigquery/docs/reference/standard-sql/other-statements#export_data_statement)
+
+[Setup Scheduled Query](https://cloud.google.com/bigquery/docs/scheduling-queries)
