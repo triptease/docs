@@ -104,3 +104,9 @@ body {
     white-space: nowrap;
   }
 }
+
+body.wide {
+  main#content {
+    max-width: 100%;
+  }
+}
