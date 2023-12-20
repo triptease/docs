@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: default
 body_class: wide
 ---
 
