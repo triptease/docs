@@ -1,5 +1,7 @@
 # Cookie Banner
 
+Click [here](https://docs.google.com/presentation/d/e/2PACX-1vRVHfDzQz20ImWnvZPYFOQjIzEcisev8GafW2VvEVckTB1t-1VkfpgMIoytGip1KT8rT47FPFlP7wrl/pub?start=false&loop=false&delayms=3000) for this information presented as slides.
+
 #### Typical Cookie Banner
 Suppose that you have your cookie banner set up as follows:
 
