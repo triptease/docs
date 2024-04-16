@@ -33,7 +33,11 @@ At Triptease, we understand that compliance and privacy are paramount for you an
 
 We care about the user’s “right to be forgotten” so much that we don’t just limit cookie consent to cookies and instead apply it to all persistent storage such as local storage. When a user rejects cookies we only rely on non-persistent storage such as session storage. If the user closes the tab and returns later, the person is well and truly forgotten and seems like a completely different person.
 
-This means you can add Triptease script all the time, even without the user accepting cookies, and as long as you have passed the user’s cookie choices to the Triptease script you are compliant. See below for IP address justification.
+This means you can add Triptease script all the time, even without the user accepting cookies, and as long as you have passed the user’s cookie choices to the Triptease script you are compliant.
+
+![functionality-scaling-based-on-consent](assets/images/functionality-scaling-based-on-consent.png)
+
+See below for IP address justification.
 
 For more details about consent mode, and how to implement it please follow our [consent mode guide](https://docs.triptease.io/consent).
 
