@@ -108,7 +108,7 @@ We have listed the terms typically used in cookie banners, grouping the common a
 Here is a typical example of a cookie banner where the user has selected Necessary, Preferences and Statistics.
 You would provide `data-storage-consent="essential, functionality, performance"` in this scenario.  
 
-![cookie-banner-example.png](assets/images/cookie-banner-example.png)
+<img src="assets/images/cookie-banner-example.png" alt="cookie banner example" style="width:500px;">
 
 ## What is the default behaviour?
 
