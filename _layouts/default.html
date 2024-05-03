@@ -41,7 +41,7 @@
            if(location.search) return location.search;
        })();
        
-       if(params !== undefined) Array.from(document.querySelectorAll('#your-script-tag ~ .language-html .s')).map(e => e.innerText = e.innerText.replace('?integrationId=REPLACE_ME', params));
+       if(params !== undefined) Array.from(document.querySelectorAll('.language-html .s, .language-html .s1')).map(e => e.innerText = e.innerText.replace('?integrationId=REPLACE_ME', params));
     </script>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
