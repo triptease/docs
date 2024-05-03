@@ -39,9 +39,9 @@ We advise against choosing option 2. Please refer to [this](/cookie-banner) for 
 
 The script should be added as early as possible. It is designed to load asynchronously, which means it will not block the rendering of your page.
 
-If the script has been wired up to receive user's cookie choices (options 1 or 2 [above](#can-the-script-work-with-cookie-banners)), you don't need to wait for the user to explicitly make a cookie choice before adding the script.
+If the script has been set up to receive user's cookie choices (option 1 [above](#is-the-script-GDPR-compliant)), you don't need to wait for the user to explicitly make a cookie choice before adding the script.
 
-If you have chosen option 3 [above](#can-the-script-work-with-cookie-banners), please ensure that a page reload is not required after the user has given consent for the script to be added.
+If you've chosen to add the script after the cookie banner (option 2 [above](#is-the-script-GDPR-compliant)), ensure that once the user grants consent, the script is added immediately without requiring a page reload.
 
 ### Where should the script be placed?
 
