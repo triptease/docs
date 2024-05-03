@@ -6,9 +6,9 @@ Click [here](https://docs.google.com/presentation/d/e/2PACX-1vRVHfDzQz20ImWnvZPY
 Suppose that you have your cookie banner set up as follows:
 
 - A cookie banner appears on your webpage, requesting users to consent to cookies.
-- If a user accepts the cookies, the Triptease script is added to your webpage.
-- If a user rejects the cookies, the Triptease script is not added to your webpage.
-- If a user allows a selection of cookies (usually chosen from Essential, Functionality, Performance, Marketing), the Triptease script is included only if Marketing has been chosen.
+- If a user accepts the cookies, Triptease script is added to your webpage.
+- If a user rejects the cookies, Triptease script is not added to your webpage.
+- If a user allows a selection of cookies (usually chosen from Essential, Functionality, Performance, Marketing), Triptease script is included only if Marketing has been chosen.
 
 Unfortunately, this configuration of your cookie banner limits your ability to fully leverage the capabilities offered by Triptease, as detailed below.
 

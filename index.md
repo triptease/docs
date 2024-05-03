@@ -22,17 +22,18 @@ Our recommended way of getting this script onto your page is via a tag manager (
 
 ### Can the script work with cookie banners?
 
-Yes, the script can work with cookie banners. Here are the available options:
+Yes, the script can work with cookie banners.
 
-1. Follow our [consent mode guide](/consent) to pass the user's cookie choices to the Triptease script.
-2. If implementing the consent mode is not currently feasible for you (as it would require development work on your end), please contact Triptease. We can assess if your Consent Manager Provider is already supported or if we can add support.
-3. Failing that, it is recommended to add the Triptease script only when the user has given consent to Marketing/Advertising or all cookies. 
-
-We advise against choosing option 3. Please refer to the [cookie banner](/cookie-banner) for detailed information on why this option is not recommended.
+We recommend that you communicate the user's consent preferences to the Triptease script. Please see [consent mode guide](/consent) for details.
 
 ### Is the script GDPR compliant?
 
-Yes, the script is GDPR compliant, provided you have chosen one of the three options listed [above](#can-the-script-work-with-cookie-banners).
+Yes, the script is GDPR compliant provided you do one of the following:
+1. Add the Triptease script all the time (prior to displaying the cookie banner, and regardless of consent chosen on the cookie banner) and communicate the user's consent preferences to the Triptease script (details [here](/consent)).   
+OR
+2. Add the Triptease script only when the user has given consent to Marketing/Advertising or all cookies.
+
+We advise against choosing option 2. Please refer to [this](/cookie-banner) for detailed information on why the option is not recommended.
 
 ### When should the script be added?
 
