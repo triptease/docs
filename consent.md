@@ -37,7 +37,7 @@ Please reach out to us if your CMP is not on this list and does not support Goog
 
 It is as simple as setting the `data-storage-consent` attribute to `auto` on the Triptease script tag.
 
-#### Example:
+#### Your script tag:
 
 ```html
 <script defer async crossorigin="anonymous" type="text/javascript"
