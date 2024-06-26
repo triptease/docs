@@ -7,6 +7,8 @@ This page details the markup that can be added to a hotel website for the benefi
 
 If you notice anything wrong please raise an [issue](https://github.com/triptease/structured-data/issues).
 
+![structured-data-overview](assets/images/structured-data-overview.png)
+
 ### Microdata vs RDFa vs JSON-LD
 
 If the markup is static (like your hotel name and address) then JSON-LD is generally the easiest to test and debug, while if the meta data is more dynamic (like offers or rate details)
