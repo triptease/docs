@@ -2,7 +2,7 @@
 
 In the past, Triptease relied on our booking engine partners to provide the necessary information for integration. However, we now prefer to use Triptease-owned integrations. This approach is designed to eliminate any development effort on the part of the booking engine.
 
-While most of our integrations are now Triptease-owned, there are still a few cases where booking engines provide us with the required information. In these instances, we’ve transitioned to using structured data based on [Schema.org](https://schema.org/), an industry-standard format. If you prefer this route, our [documentation](https://docs.triptease.io/structured-data) offers clear guidance on how to develop this integration.
+While most of our integrations are now Triptease-owned, there are still a few cases where booking engines provide us with the required information. In these instances, we’ve transitioned to using structured data based on [Schema.org](https://schema.org/), an industry-standard format. If you prefer this route, our [structured-data](https://docs.triptease.io/structured-data) documentation offers clear guidance on how to develop this integration.
 
 If you currently have a legacy integration, we encourage you to get in touch with us. We can either create a Triptease-owned integration for you or assist you in adopting the new structured data approach.
 
@@ -18,11 +18,11 @@ The rest of this guide is relevant if you continue to use a legacy integration.
 
 ```html
 <script defer async crossorigin="anonymous" type="text/javascript"
-        src="https://onboard.triptease.io/bootstrap.js?integrationId=INTEGRATION_ID">
+        src="https://onboard.triptease.io/bootstrap.js?integrationId=REPLACE_ME">
 </script>
 ```
 replacing the following value:
-- **INTEGRATION_ID**: The integration ID specific to the hotel group.  
+- **REPLACE_ME**: The integration ID specific to the hotel group.  
 
 
 2. Add a `price-fighter-widget` div to your rooms and rates page as follows:
@@ -60,7 +60,7 @@ replacing the following values:
 
 These values should be dynamic and update when the user changes their search.
 
-If your booking engine supports multi-room searches, the price you provide might not always match the search parameters (adults, children, rooms). In such cases, it's recommended not to include the price-fighter-widget div. 
+If your booking engine supports multi-room searches, be careful to avoid a situation where the price you provide does not correspond to the search parameters (adults, children, rooms) you provide. In such cases, it's recommended that you do not include the price-fighter-widget div. 
 
 When the guest navigates to a different page, the `price-fighter-widget` div should be removed to prevent the price check message from appearing on the wrong page.
 
@@ -70,12 +70,12 @@ Add a script to your booking confirmation page as described below:
 
 ```html
 <script defer async crossorigin="anonymous" type="text/javascript"
-        src="https://onboard.triptease.io/bootstrap.js?integrationId=INTEGRATION_ID&bookingValue=VALUE&bookingCurrency=CURRENCY&bookingReference=REFERENCE">
+        src="https://onboard.triptease.io/bootstrap.js?integrationId=REPLACE_ME&bookingValue=VALUE&bookingCurrency=CURRENCY&bookingReference=REFERENCE">
 </script>
 ```
 
 replacing the following values:
-- **INTEGRATION_ID**: The integration ID specific to the hotel group.
+- **REPLACE_ME**: The integration ID specific to the hotel group.
 - **VALUE**: The total value of the booking, inclusive of all taxes and fees.
 - **CURRENCY**: The currency corresponding to the booking value.
 - **REFERENCE**: The reference number for the booking.
