@@ -7,8 +7,6 @@ This page details the markup that can be added to a hotel website for the benefi
 
 If you notice anything wrong please raise an [issue](https://github.com/triptease/structured-data/issues).
 
-![structured-data-overview](assets/images/structured-data-overview.png)
-
 ### Microdata vs RDFa vs JSON-LD
 
 If the markup is static (like your hotel name and address) then JSON-LD is generally the easiest to test and debug, while if the meta data is more dynamic (like offers or rate details)
@@ -28,24 +26,23 @@ A common error to watch out for is trailing commas in JSON-LD.
 
 ### Getting started
 
-There are different levels of support for meta-data, it's best to start with the simplest and work your way up to more advanced features as you get more comfortable.
+There are different kinds of meta-data required for different parts of your booking funnel. The diagram below explains which parts are required for each stage.
 
+![structured-data-overview](assets/images/structured-data-overview.png)
+
+* [Application details](#application-details)
 * [Identification](#identification)
-* [Reservation](#reservation)
 * [Lodging Search](#lodging-search)
 * [Offers for Hotel Rooms](#offers-for-hotel-rooms)
-
-Advanced
 * [No availability](#no-availability)
-* [Application details](#application-details)
-
+* [Reservation](#reservation)
 
 ### Identification
 
-*If you are already using another form of identification (apiKeys, propertyCodes etc) then you can safely skip this step*
+*If you are already using another form of identification (apiKeys, property codes etc.) then you can safely skip this step*
 
-This is the simplest and most important meta data you can add through out your marketing website and booking engine. Ideally you want this on every page that represents a single hotel.
-Doing this will automatically allow your hotel to appear on Google search pages and Google Maps. Just putting the hotel name and @type on each page will help Triptease identify your hotel automatically
+This is the simplest and most important meta-data you can add throughout your marketing website and booking engine. Ideally you want this on every page that represents a single hotel.
+Doing this will automatically allow your hotel to appear on Google search pages and Google Maps. Just putting the hotel name and @type on each page will help Triptease identify your hotel automatically.
 
 #### JSON-LD Example
 
