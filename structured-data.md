@@ -386,7 +386,8 @@ Multiple offers can be added to a page either inside a single script tag contain
       "@type": "UnitPriceSpecification",
       "price": "99.00",
       "priceCurrency": "USD",
-      "unitText": "Nightly"
+      "unitText": "Nightly",
+      "priceComponentType": ["Room", "Tax", "Fee"]
     },
     "offeredBy": {
       "@type": "Hotel",
@@ -409,7 +410,8 @@ Multiple offers can be added to a page either inside a single script tag contain
       "@type": "UnitPriceSpecification",
       "price": "88.00",
       "priceCurrency": "USD",
-      "unitText": "Nightly"
+      "unitText": "Nightly",
+      "priceComponentType": ["Room", "Tax", "Fee"]
     },
     "offeredBy": {
       "@type": "Hotel",
@@ -436,6 +438,9 @@ Multiple offers can be added to a page either inside a single script tag contain
     <meta itemprop="price" content="99.00">$99.00
     <meta itemprop="priceCurrency" content="USD">
     <meta itemprop="unitText" content="Nightly">per night
+    <meta itemprop="priceComponentType" content="Room" />
+    <meta itemprop="priceComponentType" content="Fee" />
+    <meta itemprop="priceComponentType" content="Tax" />
   </span>
   <span itemprop="offeredBy" itemscope itemtype="http://schema.org/Hotel">
     <span itemprop="name">Sea View Hotel</span>
@@ -467,11 +472,27 @@ The [identifier](https://schema.org/identifier) can be used to set a rate code
 
 The [priceSpecification](https://schema.org/UnitPriceSpecification) contains the [price](https://schema.org/price) and [currency](https://schema.org/currency):
 
-price: The numeric value of the offer
+##### price
+The numeric value of the offer
 
-currency: The 3 character currency code of the offer
+##### currency
+The 3 character currency code of the offer
 
-unitText (optional): "Total" if the price is for the entire stay. "Nightly" if the price is per night. Defaults to "Nightly".
+##### unitText (Optional)
+"Total" if the price is for the entire stay. "Nightly" if the price is per night. Defaults to "Nightly".
+
+##### priceComponentType (Optional)
+
+Depending on whether the price is for the room only, or includes fees or tax, choose the appropriate priceComponentType.
+
+| Price Component Type       | JSON-LD                                        | Microdata                                                                                     |
+|----------------------------|------------------------------------------------|----------------------------------------------------------------------------------------------|
+| Room only price            | `"priceComponentType": ["Room"]`               | `<meta itemprop="priceComponentType" content="Room" />`                                      |
+| Room and tax               | `"priceComponentType": ["Room", "Tax"]`        | `<meta itemprop="priceComponentType" content="Room" />`<br>`<meta itemprop="priceComponentType" content="Tax" />` |
+| Room and fee               | `"priceComponentType": ["Room", "Fee"]`        | `<meta itemprop="priceComponentType" content="Room" />`<br>`<meta itemprop="priceComponentType" content="Fee" />` |
+| Room, fee and tax          | `"priceComponentType": ["Room", "Fee", "Tax"]` | `<meta itemprop="priceComponentType" content="Room" />`<br>`<meta itemprop="priceComponentType" content="Fee" />`<br>`<meta itemprop="priceComponentType" content="Tax" />` |
+
+
 
 #### offeredBy (Optional)
 
