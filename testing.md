@@ -37,13 +37,13 @@ You can test the integration by following these steps:
 1. Verify the script loaded successfully by checking for `triptease` in the network tab of your browser's developer tools.
 2. Verify the existence of `window.triptease` object in the browser console.
 3. Verify the following iframe was added to the page’s `<body>`.
+4. Verify the iframe loaded successfully by checking for `kernel` in the network tab of your browser's developer tools.
+
 ```html
 <iframe name="triptease.onboard.kernel" src="https://onboard.triptease.io/kernel/..."
 style="display: none;" sandbox="allow-scripts allow-same-origin" title="blank" aria-hidden="true"></iframe>
 ```
 NB: The `src` attribute has been abbreviated for brevity and will contain dynamic values (like version number etc.).
-4. Verify the iframe loaded successfully by checking for `kernel` in the network tab of your browser's developer tools.
-
 
 ## Testing Hotel Identification on Hotel Specific Pages
 
