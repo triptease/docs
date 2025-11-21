@@ -57,6 +57,12 @@ If your site uses a Content-Security-Policy (CSP) header, ensure that `triptease
 
 This defines Triptease domain and subdomains as a trusted source for scripts and ensures that the Triptease script will not be blocked by the browser.
 
+### Can you copy our script or use a fixed version instead?
+
+No. Please use only the unversioned script we provide. This script is redirected (HTTP 307) to a versioned file that is cached for a year. We update our code many times a day, and this setup makes sure that whenever a browser is not using its cache, it always loads the most up-to-date version without you needing to do anything.
+
+If you copy the script or hard-code a fixed version, it can fall out of sync with our other client-side scripts and server-side code, and the product may not work as expected.
+
 ### What does the script do? 
 
 The script performs the following tasks:
@@ -65,12 +71,6 @@ The script performs the following tasks:
 - Identifies your group/brand and the specific hotel 
 - Loads the correct products for that page
 - Reads page specific data (see below) and provides it to the loaded products
-
-### Can you copy our script or use a fixed version instead?
-
-No. Please use only the unversioned script we provide. This script is redirected (HTTP 307) to a versioned file that is cached for a year. We update our code many times a day, and this setup makes sure that whenever a browser is not using its cache, it always loads the most up-to-date version without you needing to do anything.
-
-If you copy the script or hard-code a fixed version, it can fall out of sync with our other client-side scripts and server-side code, and the product may not work as expected.
 
 ### What data do we read?
 
