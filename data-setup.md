@@ -16,7 +16,6 @@ BigQuery provides a number of advantages from an integration perspective:
 Currently we have the following data available:
 
 * [Guest Event Data](https://docs.triptease.io/data)
-* Parity Data (Coming Soon)
 
 ## What do you need to get started?
 
