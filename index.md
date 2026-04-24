@@ -131,3 +131,9 @@ You should see a minimal change in score with or without our script.
 
 If your booking engine is not supported, please reach out to us, and we may be able to integrate with your booking engine.
 Alternatively, you can provide us the data we need using industry standard [Structured Data](/structured-data).
+
+### Other resources
+
+Additional information about the data we collect and how we use cookies can be found at:
+- [Privacy Policy](https://www.triptease.com/en/privacy-policy)
+- [Cookie Policy](https://www.triptease.com/en/cookie-policy)
