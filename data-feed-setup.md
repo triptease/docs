@@ -2,14 +2,14 @@
 
 ## How is the data shared?
 
-We use Google BigQuery to share our data with our partners. This allows us to share data in a secure and scalable way 
-but also allow you to decided how fresh you want the data to be.
+We use Google BigQuery to share our data with you. This allows us to share data in a secure and scalable way 
+but also allows you to decide how fresh you want the data to be.
 
 ### Why BigQuery?
 
 BigQuery provides a number of advantages from an integration perspective:
 1. BigQuery is natively supported by all major BI tools (e.g. Tableau, Looker, PowerBI, Qlik etc.)
-2. Storage and query costs are separate, this allows Triptease to cover all storage costs and you only pay for the queries you run that are outside the free tier. This allows you to choose between on-demand or scheduled refreshes of your data.
+2. Storage and query costs are separate. This allows Triptease to cover all storage costs, while you only pay for the queries you run that are outside the free tier — so you can choose between on-demand or scheduled refreshes of your data.
 
 ## What data is available?
 
@@ -19,26 +19,27 @@ See the [Data](/data) page for a full list of available data sources.
 
 You will need the following:
 
-1. A BigQuery account (either a user and/or service account)
-   * You can signup for the [free tier here](https://cloud.google.com/bigquery/)
-2. A BigQuery project where you want the data to be visible
+1. A Google Cloud project where you want the data to be visible
    * You can create a [project here](https://console.cloud.google.com/projectcreate)
+2. A Google user account and/or service account that we will share the data with (we just need the email address)
+   * If you don't already have a Google Cloud account, you can [sign up for the free tier here](https://cloud.google.com/bigquery/)
+   * You can create a [service account here](https://console.cloud.google.com/iam-admin/serviceaccounts) (select your project, then "Create Service Account")
 
-Once you have both of those you need to share your BigQuery account with Triptease so we can share the data with you.
+Once you have both, send Triptease the email address of the user and/or service account you want the data shared with. You don't need to grant us any access to your project — we publish the data via Analytics Hub to the account you provide.
 
 NB. Having both a service account and a user account is recommended as it allows you to explore the data as a user and 
-then use the service account for automated processes etc (Like BI Access).
+then use the service account for automated processes (like BI access).
 
 ### Will you be charged by Google?
 
 Google BigQuery has a free tier that allows you to run 1TB of queries per month for free. This should easily cover 
-most use cases including querying the data multiple times a day. If however you run complex queries that process most
+most use cases, including querying the data multiple times a day. If, however, you run complex queries that process most
 of your data many times a day, you could start to be charged by Google. In this case you will either want to copy the 
-data into your own data-warehouse or enable query caching in your BI tool of choice.
+data into your own data warehouse or enable query caching in your BI tool of choice.
 
 ## What are the next steps?
 
-Once Triptease has added your account, you can then follow [this link](https://console.cloud.google.com/bigquery/analytics-hub/exchanges(analyticshub:search)?queryText=triptease)
+Once Triptease has shared the data with your account, you can then follow [this link](https://console.cloud.google.com/bigquery/analytics-hub/exchanges(analyticshub:search)?queryText=triptease)
 
 If prompted click the "ENABLE" button to allow access to Analytics Hub
 
@@ -62,8 +63,8 @@ From here you can explore the data and write SQL queries directly in your browse
 
 ## How do you connect your BI tool?
 
-One you have setup and tested access from BigQuery, you can now use the service account to setup access from BigQuery to
-your BI tool of choice:
+Once you have set up and tested access in BigQuery, you can use the service account to connect your BI tool of choice to
+BigQuery:
 
 ### Looker Studio (formerly Google Data Studio)
 
