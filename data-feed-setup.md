@@ -20,10 +20,10 @@ See the [Data](/data) page for a full list of available data sources.
 You will need the following:
 
 1. A Google Cloud project where you want the data to be visible
-   * You can create a [project here](https://console.cloud.google.com/projectcreate)
+   * You can create a [project here](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
 2. A Google user account and/or service account that we will share the data with (we just need the email address)
    * If you don't already have a Google Cloud account, you can [sign up for the free tier here](https://cloud.google.com/bigquery/)
-   * You can create a [service account here](https://console.cloud.google.com/iam-admin/serviceaccounts) (select your project, then "Create Service Account")
+   * You can create a [service account here](https://cloud.google.com/iam/docs/service-accounts-create) (select your project, then "Create Service Account")
 
 Once you have both, send Triptease the email address of the user and/or service account you want the data shared with. You don't need to grant us any access to your project — we publish the data via Analytics Hub to the account you provide.
 
