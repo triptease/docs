@@ -24,6 +24,38 @@ You can use [schema.org's validator](https://validator.schema.org) to check the 
 
 A common error to watch out for is trailing commas in JSON-LD.
 
+### Typed builders and validator
+
+If you would rather not hand-write the JSON-LD described on this page, use
+[`@triptease/structured-data`](https://www.npmjs.com/package/@triptease/structured-data):
+typed builders with compile-time checks and a runtime validator that emit exactly the
+markup this guide documents.
+
+```bash
+yarn add @triptease/structured-data
+```
+
+```ts
+import { hotel } from '@triptease/structured-data';
+
+hotel({
+    name: 'Sea View Hotel',
+    identifier: '1234567',
+}).inject(); // appends the JSON-LD script tag; replaces any prior tag of the same @type, so it is SPA-safe
+```
+
+If you have no build pipeline, load it from our CDN instead and use the
+`Triptease.StructuredData` global:
+
+```html
+<script src="https://onboard.triptease.io/structured-data.js" defer></script>
+```
+
+For production we recommend pinning a version
+(`https://onboard.triptease.io/structured-data/vX.Y.Z/structured-data.js` — the current
+version is shown on [npm](https://www.npmjs.com/package/@triptease/structured-data)).
+See the package README for the full API, React helpers, and validation examples.
+
 ### Getting started
 
 There are different kinds of meta-data required for different parts of your booking funnel. The diagram below explains which parts are required for each stage.
