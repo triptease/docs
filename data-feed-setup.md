@@ -27,8 +27,8 @@ You will need the following:
 
 Once you have both, send Triptease the email address of the user and/or service account you want the data shared with. You don't need to grant us any access to your project — we publish the data via Analytics Hub to the account you provide.
 
-NB. Having both a service account and a user account is recommended as it allows you to explore the data as a user and 
-then use the service account for automated processes (like BI access).
+NB. Send us a user account as well as a service account. The setup steps below are done in the browser, which a service
+account cannot do, and the service account is then ready for automated processes (like BI access).
 
 ### Will you be charged by Google?
 
@@ -39,17 +39,15 @@ data into your own data warehouse or enable query caching in your BI tool of cho
 
 ## What are the next steps?
 
-Once Triptease has shared the data with your account, you can then follow [this link](https://console.cloud.google.com/bigquery/analytics-hub/exchanges(analyticshub:search)?queryText=triptease)
+Once Triptease has shared the data with your account, open the listing link we send you, signed in as the user account
+you gave us. The listing is private, so searching Analytics Hub will not find it and no other account can see it.
 
 If prompted click the "ENABLE" button to allow access to Analytics Hub
 
 ![enable-analytics-hub.png](assets/images/enable-analytics-hub.png)
 
-Then you should see a listing similar to this
-
-![find-triptease-listing.png](assets/images/find-triptease-listing.png)
-
-Click on the listing and then click "ADD DATA SET TO PROJECT"
+Click on the listing and then click "ADD DATA SET TO PROJECT". Check the console is on the project you want the data in —
+you will need permission to create a dataset there (`bigquery.datasets.create`, which BigQuery Admin includes).
 
 ![add-data-to-project.png](assets/images/add-data-to-project.png)
 
