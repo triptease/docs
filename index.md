@@ -24,7 +24,7 @@ Our recommended way of getting this script onto your page is via a tag manager (
 
 Yes, the script can work with cookie banners.
 
-We recommend that you communicate the user's consent preferences to the Triptease script. Please see [consent mode guide](/consent) for details.
+We recommend that you communicate the user's consent preferences to the Triptease script. We record the consent state your site passes to us, so processing stays within what the guest agreed. Please see [consent mode guide](/consent) for details.
 
 ### Is the script GDPR compliant?
 
@@ -74,42 +74,44 @@ The script performs the following tasks:
 
 ### What data do we read?
 
-We read the following information (if available)
-- Search query
-    - Checkin 
-    - Checkout 
-    - Number of adults 
-    - Number of children
-- Search results
-    - Room and rate names
-    - Price
-- Booking confirmation pages
-    - Booking reference
-    - Total price 
-    - Room only price
-    - Room and rate names
-- Guest’s information
-    - IP address (always masked) 
-    - Approximate Geo location (country/region) 
-    - Browser and device information (from User Agent)
-- Hotel information
-    - Street
-    - Postal Code
-    - City
-    - Country
-    - Geolocation
+We read the following information (if available).
+
+| Area | What we read | Note |
+|---|---|---|
+| Identifiers | Pseudonymous identifiers for the browser and for the session | Stored in a cookie or local storage, subject to third-party storage consent |
+| | IP address | Masked before storage |
+| Search query | Checkin and checkout dates | |
+| | Number of adults and children | |
+| | Promotional or rate codes applied | |
+| Search results | Room and rate names | |
+| | Price | |
+| Booking confirmation | Booking reference and status | |
+| | Total price and room-only price | |
+| | Room and rate names | |
+| Guest's visit | Pages viewed during the session, their titles, and the site the guest arrived from | |
+| | Advertising click identifiers and campaign tags on the URL | |
+| | Which links and buttons were clicked | |
+| | Approximate location derived from the IP address | City level |
+| | Browser, operating system, device type, screen size, time zone and language | |
+
+### What data do we read only when you enable a feature?
+
+We read these only after you set up the feature on the Triptease platform.
+
+| What we read | Feature | Lawful basis and use |
+|---|---|---|
+| Email address | Cart Abandonment | Legitimate interest. Used only to recover the abandoned booking, never for general marketing |
+| Email address, name, title, postal code, telephone | Data Capture messages | The guest's marketing consent, given in the message |
 
 ### What data do we never read?
 
-We never read any sensitive information such as:
-- Guest details 
-    - First / last name,
-    - Address
-    - Email (except when you have opted-in for Cart Abandonment feature)
-    - Telephone etc
-- Payment details 
-    - Card number
-    - Expiry etc
+| What we never read | Note |
+|---|---|
+| Payment details: card number, expiry and similar | |
+| Form input, beyond the feature-specific items above | |
+| Special categories under GDPR Article 9, such as health or religion | |
+
+For the complete field-level list of what we store, see [Triptease Event Data](guest-event-data.html).
 
 For more information head over to our help section on [How Triptease collects and uses data](https://help.triptease.com/en/collections/102136-getting-started#how-triptease-collects-and-uses-data).
 
