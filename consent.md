@@ -28,8 +28,10 @@ This is available for supported CMPs.
 
 Currently, the following CMPs are supported:
 * CookieBot
+* CookieScript
 * Klaro
 * OneTrust
+* SiteMinder
 * TrustArc
 * Google Consent Mode V2 - If your Consent Manager Provider (CMP) is a Google certified CMP for [Consent Mode V2](https://support.google.com/tagmanager/answer/10718549?hl=en) we can enable automatic consent mode.
 
