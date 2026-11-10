@@ -15,6 +15,11 @@ BigQuery provides a number of advantages from an integration perspective:
 
 See the [Data](/data) page for a full list of available data sources.
 
+### Which hotels does the feed include?
+
+The feed covers every hotel in your Triptease account. We can't share a subset of hotels. If only some people should
+see some hotels, filter the data on your side once it's in your project.
+
 ## What do you need to get started?
 
 You will need the following:
